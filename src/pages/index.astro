@@ -1,7 +1,9 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import '@/styles/global.css';
+import { Button } from "@/components/ui/button"
 ---
+
 
 <html lang="en">
 	<head>
@@ -17,5 +19,89 @@ import '@/styles/global.css';
 		
 		<h1>Astro</h1>
 		<h1>test</h1>
+		<Button>Click me</Button>
+
+		<section class="relative pt-20 pb-20 tracking-widest" id="header">
+		<div class="absolute w-full h-full top-0 left-0 bg-cover bg-center bg-no-repeat" style="background-image:url('https://d1pnnwteuly8z3.cloudfront.net/images/a5ff462a-7f2f-43a6-a56d-1f5d07872457/daded5a5-777f-4cf4-8f3e-ce4ab1c357ec.jpg')"></div>
+		<div class="container relative">
+			<div class="row items-center my-40">
+			<div class="col md:w-8/12 lg:w-6/12 mx-auto">
+				<h1 class="letter-spacing-xs text-7xl -mx-20 mb-6 font-semibold tracking-wide text-center text-white text-primary-50">Mandy Rafferty</h1>
+				<p class="h5 mb-6 text-2xl font-bold leading-6 text-center text-white">MECHANICAL ENGINEER</p>
+			</div>
+			</div>
+		</div>
+		</section>
+
+		<section class="mb-16 px-8">
+		<h2 class="text-2xl font-semibold mb-8 text-center">Featured Projects</h2>
+		<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+			<article class="bg-gray-50 dark:bg-slate-800 rounded-lg shadow-sm p-6 flex flex-col items-start">
+			<a href="/article/start-your-blog-with-storyteller-theme" class="w-full">
+				<img
+				src="https://images.unsplash.com/photo-1659942256016-5de203e0481b?auto=format&fit=crop&w=400&q=80"
+				alt="Start Your Blog with Storyteller Theme"
+				class="w-full h-auto object-cover rounded mb-4"
+				>
+			</a>
+			<h3 class="text-xl font-bold mb-2">
+				<a href="/article/start-your-blog-with-storyteller-theme">
+				Granular Jamming Wrist Brace
+				</a>
+			</h3>
+			<p class="text-gray-500 dark:text-gray-400 text-sm mb-4 flex-grow">
+				Complete guide to setting up your own blog using the Storyteller Astro theme - from installation to customization and deployment.
+			</p>
+			<a href="/article/start-your-blog-with-storyteller-theme" class="text-black dark:text-white underline text-sm mt-auto self-start">
+				Learn More
+			</a>
+			</article>
+			<article class="bg-gray-50 dark:bg-slate-800 rounded-lg shadow-sm p-6 flex flex-col items-start">
+			<a href="/article/how-to-build-minimal-blog-astro" class="w-full">
+				<img
+				src="https://images.unsplash.com/photo-1558882224-dda166733046?auto=format&fit=crop&w=400&q=80"
+				alt="How to Build a Minimal Blog with Astro"
+				class="w-full h-auto object-cover rounded mb-4"
+				>
+			</a>
+			<h3 class="text-xl font-bold mb-2">
+				<a href="/article/how-to-build-minimal-blog-astro">
+				Remote Controlled Salt Spraying Robot
+				</a>
+			</h3>
+			<p class="text-gray-500 dark:text-gray-400 text-sm mb-4 flex-grow">
+				A comprehensive guide to creating a clean, fast blog using Astro's static site generation capabilities.
+			</p>
+			<a href="/article/how-to-build-minimal-blog-astro" class="text-black dark:text-white underline text-sm mt-auto self-start">
+				Learn More
+			</a>
+			</article>
+			<article class="bg-gray-50 dark:bg-slate-800 rounded-lg shadow-sm p-6 flex flex-col items-start">
+			<a href="/article/monochrome-ui-less-is-more" class="w-full">
+				<img
+				src="https://images.unsplash.com/photo-1536376072261-38c75010e6c9?auto=format&fit=crop&w=400&q=80"
+				alt="Monochrome UI: Less is More"
+				class="w-full h-auto object-cover rounded mb-4"
+				>
+			</a>
+			<h3 class="text-xl font-bold mb-2">
+				<a href="/article/monochrome-ui-less-is-more">
+				Monochrome UI: Less is More
+				</a>
+			</h3>
+			<p class="text-gray-500 dark:text-gray-400 text-sm mb-4 flex-grow">
+				Exploring the power of monochrome design in creating elegant, focused user interfaces.
+			</p>
+			<a href="/article/monochrome-ui-less-is-more" class="text-black dark:text-white underline text-sm mt-auto self-start">
+				Learn More
+			</a>
+			</article>
+		</div>
+		<hr class="border-t border-gray-200 dark:border-gray-700 my-12">
+		</section>
 	</body>
 </html>
+
+<Layout title="Home - Your Portfolio">
+  <h1>Welcome to my portfolio!</h1>
+</Layout>
