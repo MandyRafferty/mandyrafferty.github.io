@@ -1,0 +1,129 @@
+---
+import Layout from '../layouts/Layout.astro';
+import genProjects from '../assets/images/eng-projects-header.jpg';
+import testing from '../assets/images/granJamTestingThumbnail.jpg';
+import DIYthumbnail from '../assets/images/DIYfabThumbnail.jpg';
+import ewb from '../assets/images/EWB.jpg';
+---
+
+<Layout title="Home - Your Portfolio">
+  <a href="/">Home</a>
+  <a href="/aboutme/">About</a>
+  <a href="/myprojects/">My Projects</a>
+
+<!-- Hero Section -->
+<section class="relative pt-1 pb-1 tracking-widest" id="header">
+  <div class="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat md:bg-fixed"
+  style={`background-image: url(${genProjects.src});`}
+  ></div>
+  <div class="container mx-auto px-4 relative">
+    <div class="flex items-center my-40">
+      <div class="w-full md:w-8/12 lg:w-6/12 mx-auto">
+        <h1 class="text-6xl mb-6 font-semibold tracking-wide text-center text-white">My Projects</h1>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Engineering Projects Section -->
+<section class="py-24">
+  <div class="max-w-7xl mx-auto px-8">
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-16 items-center">
+      
+      <!-- Left column: image (7/12 ~ 60%) -->
+      <div class="md:col-span-7">
+        <img 
+          src={testing.src}
+          alt="Engineering Projects"
+          class="w-full h-auto object-cover rounded-none shadow-none"
+        />
+      </div>
+
+      <!-- Right column: text (5/12 ~ 40%) -->
+      <div class="md:col-span-5 flex flex-col justify-center text-center text-gray-600 md:text-left">
+        <h2 class="text-4xl font-bold mb-6 text-center">Engineering Projects</h2>
+        <p class="text-lg font-light text-gray-600 leading-relaxed mb-10 text-left">
+          Projects completed while studying biomedical engineering at Rutgers University and mechanical engineering at Carnegie Mellon University.
+        </p>
+        <div class="text-center">
+          <button 
+            class="px-8 py-3 text-sm font-bold tracking-wide text-white bg-black border border-black rounded transition-all duration-300 hover:text-black hover:bg-white uppercase"
+            id="eng-projects"
+          >
+            See More
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- DIY Design & Fabrication -->
+ <section class="py-24">
+  <div class="max-w-7xl mx-auto px-8">
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-16 items-center">
+      
+      <!-- Left column: image (7/12 ~ 60%) -->
+      <div class="md:col-span-7">
+        <img 
+          src={DIYthumbnail.src}
+          alt="DIY Design & Fabrication"
+          class="w-full h-auto object-cover rounded-none shadow-none"
+        />
+      </div>
+
+      <!-- Right column: text (5/12 ~ 40%) -->
+      <div class="md:col-span-5 flex flex-col justify-center text-center text-gray-600 md:text-left">
+        <h2 class="text-4xl font-bold mb-6 text-center">DIY Design & Fabrication</h2>
+        <p class="text-lg font-light text-gray-600 leading-relaxed mb-10 text-left">
+          Mechanical engineering master's level course at Carnegie Mellon University that focuses on product design and fabrication.
+        </p>
+        <div class="text-center">
+          <button 
+            class="px-8 py-3 text-sm font-bold tracking-wide text-white bg-black border border-black rounded transition-all duration-300 hover:text-black hover:bg-white uppercase"
+            id="eng-projects"
+          >
+            See More
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- EWB -->
+<section class="py-24">
+  <div class="max-w-7xl mx-auto px-8">
+    <div class="grid grid-cols-1 md:grid-cols-12 gap-16 items-center">
+
+      <!-- Left column: image (7/12 ~ 60%) -->
+      <div class="md:col-span-7">
+        <img 
+          src={ewb.src}
+          alt="Engineers Without Borders: Project Kenya"
+          class="w-full h-auto object-cover rounded-none shadow-none"
+        />
+      </div>
+
+      <!-- Right column: text (5/12 ~ 40%) -->
+      <div class="md:col-span-5 flex flex-col justify-center text-center text-gray-600 md:text-left">
+        <h2 class="text-4xl font-bold mb-6 text-center">Engineers Without Borders: Project Kenya</h2>
+        <p class="text-lg font-light text-gray-600 leading-relaxed mb-10 text-left">
+          Project Kenya's water project as a part of the EWB Rutgers University Chapter, which focused on increasing clean water accessibility for a community in Kolunje, Kenya.
+        </p>
+        <div class="text-center">
+          <button 
+            class="px-8 py-3 text-sm font-bold tracking-wide text-white bg-black border border-black rounded transition-all duration-300 hover:text-black hover:bg-white uppercase"
+            id="ewb-projects"
+          >
+            See More
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+</Layout>

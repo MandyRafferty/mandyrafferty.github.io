@@ -5,6 +5,7 @@ import headerBg from '../assets/images/pittsburgh-grandview-overlook.jpg';
 import saltRobot from '../assets/images/saltRobotThumbnail.png';
 import wristBrace from '../assets/images/Granular Jamming Wrist Brace.jpg';
 import wrench from '../assets/images/WrenchThumbnail.jpg';
+import office from '../assets/images/office.jpg';
 import { Button } from "@/components/ui/button";
 ---
 
@@ -12,6 +13,7 @@ import { Button } from "@/components/ui/button";
 <Layout title="Home - Your Portfolio">
   <a href="/">Home</a>
   <a href="/aboutme/">About</a>
+  <a href="/myprojects/">My Projects</a>
   
   <h1>Astro</h1>
   <h1>test</h1>
@@ -100,9 +102,11 @@ import { Button } from "@/components/ui/button";
 		</section>
 
 		<section class="relative py-40 w-full" id="feature">
-		<div class="absolute inset-0 w-full h-full bg-no-repeat bg-center bg-cover bg-fixed" style="background-image:url('https://d1pnnwteuly8z3.cloudfront.net/images/a5ff462a-7f2f-43a6-a56d-1f5d07872457/ace2a8cb-99b4-4e39-9edb-3860f0f165a7.jpg')"></div>
+		<div class="absolute inset-0 w-full h-full bg-no-repeat bg-center bg-cover bg-fixed"
+			 style={`background-image: url(${office.src});`}
+		></div>
 		<div class="container mx-auto px-4 text-center relative">
-			<i class="text-4xl text-center text-muted">
+			<i class="text-4xl text-center text-gray-700">
 			<b>Bringing ideas to life through design & engineering.</b>
 			</i>
 		</div>
