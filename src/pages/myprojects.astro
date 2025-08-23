@@ -23,6 +23,11 @@ const engineeringProjects = sortedProjects.filter(project =>
 const diyProjects = sortedProjects.filter(project => 
   project.frontmatter.category === 'diy'
 );
+
+const ewbProject = allProjects.find(project => 
+  project.file.includes('ewb-kenya.md')
+);
+const ewbSlug = ewbProject?.file.split('/').pop()?.replace(/\.(md|mdx)$/, '');
 ---
 
 <Layout title="Projects" description="All projects.">
@@ -47,7 +52,7 @@ const diyProjects = sortedProjects.filter(project =>
             <p>
               Projects completed while studying biomedical engineering at Rutgers University and mechanical engineering at Carnegie Mellon University.
             </p>
-            <a href={`${base}engineering-projects/`} class="btn btn-primary">SEE MORE</a>
+            <a href={`${base}engineering-projects/`} class="btn btn-primary">LEARN MORE</a>
           </div>
         </div>
 
@@ -63,11 +68,64 @@ const diyProjects = sortedProjects.filter(project =>
             <p>
               Mechanical engineering master's level course at Carnegie Mellon University that focuses on product design and fabrication.
             </p>
-            <a href={`${base}DIYdesign/`} class="btn btn-primary">SEE MORE</a>
+            <a href={`${base}DIYdesign/`} class="btn btn-primary">LEARN MORE</a>
+          </div>
+        </div>
+
+        <!-- EWB -->
+        <div class="project-card">
+          <div class="card-image">
+            <img src="/images/EWBgroupphoto.jpg" alt="Engineers Without Borders" />
+          </div>
+          <div class="card-content">
+            <a href=={`${base}engineering-projects/`}>
+              <h2>Engineers Without Borders: Project Kenya</h2>
+            </a>
+            <p>
+              Project Kenya's water project as a part of the EWB Rutgers University Chapter,
+              which focused on increasing clean water accessibility for a community in Kolunje, Kenya.
+            </p>
+            <a href={`${base}myprojects/${ewbSlug}/`} class="btn btn-primary">LEARN MORE</a>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- Test -->
+<!-- <article class="project-card">
+  {ewbProject.thumbnail && (
+    <div class="project-thumbnail">
+      <img src={ewbProject.thumbnail} alt="Group photo" />
+    </div>
+  )}
+
+  <div class="project-content">
+    <h3 class="project-title">
+      <a href={`${base}myprojects/${ewbSlug}/`}>Engineers Without Borders: Project Kenya</a>
+    </h3>
+
+    {ewbProject.excerpt && (
+      <p class="project-excerpt">{ewbProject.excerpt}</p>
+    )} -->
+
+    <!-- Using existing class -->
+<!-- <article class="project-card">
+  {ewbProject.thumbnail && (
+    <div class="project-thumbnail">
+      <img src={ewbProject.thumbnail} alt={ewbProject.title} />
+    </div>
+  )}
+
+  <div class="project-content">
+    <h3 class="project-title">
+      <a href={`${base}myprojects/${ewbSlug}`}>{ewbProject.title}</a>
+    </h3>
+
+    {ewbProject.excerpt && (
+      <p class="project-excerpt">{ewbProject.excerpt}</p>
+    )}
+  </div>
+</article> -->
 
     <div class="hero-actions">
       <a href={`${base}allprojects/`} class="btn btn-primary">View All Projects</a>
@@ -123,10 +181,10 @@ const diyProjects = sortedProjects.filter(project =>
 
   .project-card {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1.3fr 1fr;
     gap: calc(var(--grid-unit) * 6);
     align-items: center;
-    padding: calc(var(--grid-unit) * 4);
+    padding: calc(var(--grid-unit) * 3);
     background-color: var(--color-surface);
     border-radius: 8px;
     margin-bottom: calc(var(--grid-unit) * 8);

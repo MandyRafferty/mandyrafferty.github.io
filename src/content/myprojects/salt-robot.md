@@ -58,8 +58,11 @@ thumbnail: '/images/saltRobotThumbnail.png'
     </div>
 </div>
 
+## Click Below to Watch Demo Video!
 <!-- Prototype Video -->
-<div class="grid grid-cols-1 lg:grid-cols-3 gap-8 my-12">
+[![Project Demo Video](https://img.youtube.com/vi/uhJG0-Z05Kw/maxresdefault.jpg)](https://www.youtube.com/watch?v=uhJG0-Z05Kw)
+
+<!-- <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 my-12">
   <div class="lg:col-span-2 prose prose-lg max-w-none">
     <h2>Prototype Demonstration</h2>
   </div>
@@ -74,4 +77,4 @@ thumbnail: '/images/saltRobotThumbnail.png'
       Your browser does not support the video tag.
     </video>
   </div>
-</div>
+</div> -->
