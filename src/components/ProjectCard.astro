@@ -1,0 +1,31 @@
+---
+import '../styles/project-card.css';
+const { frontmatter, slug } = Astro.props;
+const base = import.meta.env.BASE_URL;
+---
+
+<article class="project-card">
+  {frontmatter.thumbnail && (
+    <div class="project-thumbnail">
+      <img src={frontmatter.thumbnail} alt={frontmatter.title} />
+    </div>
+  )}
+
+  <div class="project-content">
+    <h3 class="project-title">
+      <a href={`${base}myprojects/${slug}`}>{frontmatter.title}</a>
+    </h3>
+
+    {frontmatter.excerpt && (
+      <p class="project-excerpt">{frontmatter.excerpt}</p>
+    )}
+
+    {frontmatter.categories && (
+      <div class="project-categories">
+        {frontmatter.categories.map((category: string) => (
+          <span class="demo-category">{category}</span>
+        ))}
+      </div>
+    )}
+  </div>
+</article>
