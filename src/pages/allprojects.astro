@@ -1,0 +1,357 @@
+---
+import Layout from '../components/Layout.astro';
+import ProjectCard from '../components/ProjectCard.astro';
+const base = import.meta.env.BASE_URL;
+
+const mdProjGlob = import.meta.glob('../content/myprojects/*.md', { eager: true });
+const mdxProjGlob = import.meta.glob('../content/myprojects/*.mdx', { eager: true });
+
+const allProjects = [...Object.values(mdProjGlob), ...Object.values(mdxProjGlob)] as any[];
+// const sortedProjects = allProjects
+//   .sort((a: any, b: any) => new Date(b.frontmatter.date).getTime() - new Date(a.frontmatter.date).getTime());
+// Sort all projects by project_num (ascending order: 1, 2, 3, etc.)
+const sortedProjects = allProjects
+  .sort((a: any, b: any) => {
+    // Sort by project_num - projects without project_num go to end
+    const aNum = a.frontmatter.project_num || 999;
+    const bNum = b.frontmatter.project_num || 999;
+    return aNum - bNum;
+  });
+---
+
+<Layout title="Projects" description="All projects.">
+  <div class="project-page">
+    <section class="demo-section">
+      <div class="container">
+        <h1 class="section-title">All Projects</h1>
+        <p class="project-description">
+          Collaborating, designing, and fabricating to create unique engineering solutions.
+        </p>
+        <hr class="project-rule" />
+
+      {sortedProjects.length > 0 ? (
+        <div class="projects">
+          {sortedProjects.map((post: any) => (
+            <ProjectCard 
+              frontmatter={post.frontmatter} 
+              slug={post.file.split('/').pop()?.replace(/\.(md|mdx)$/, '')} 
+            />
+          ))}
+        </div>
+
+    // {sortedProjects.length > 0 ? (
+    //   <div class="posts-list">
+    //     {sortedProjects.map((post: any) => (
+    //       <article class="post-item">
+    //         <h2 class="post-title">
+    //           <a href={`${base}myprojects/${post.file.split('/').pop()?.replace(/\.(md|mdx)$/, '')}`}>{post.frontmatter.title}</a>
+    //         </h2>
+            
+    //         <div class="post-meta">
+    //           {post.frontmatter.categories && (
+    //             <div class="post-categories">
+    //               {post.frontmatter.categories.map((category: string) => (
+    //                 <span class="category">{category}</span>
+    //               ))}
+    //             </div>
+    //           )}
+    //         </div>
+            
+    //         {post.frontmatter.excerpt && (
+    //           <p class="post-excerpt">{post.frontmatter.excerpt}</p>
+    //         )}
+            
+    //         <a href={`${base}myprojects/${post.file.split('/').pop()?.replace(/\.(md|mdx)$/, '')}`} class="learn-more">Learn More →</a>
+    //       </article>
+    //     ))}
+    //   </div>
+        ) : (
+          <div class="no-posts">
+            <p>No posts available yet. Start writing by creating files in <code>src/pages/project/</code></p>
+          </div>
+        )}
+      </div>
+    </section>
+  </div>
+
+    <footer class="post-footer">
+      <div class="post-navigation">
+        <a href={`${base}myprojects/`} class="btn btn-primary">View by Category</a>
+      </div>
+    </footer>
+</Layout>
+
+<style>
+  .container {
+    max-width: 1200px;
+    margin: 0 auto; 
+    padding: 0 var(--content-padding);
+  }
+
+  .demo-section {
+    padding: calc(var(--grid-unit) * 8) 0;
+  }
+
+  .section-title {
+    font-family: var(--font-heading-secondary);
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: var(--color-accent);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: calc(var(--grid-unit) * 6);
+    text-align: center;
+  }
+
+  .projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Arrange cards in 3 columns */
+    gap: calc(var(--grid-unit) * 3);
+    margin-bottom: calc(var(--grid-unit) * 6);
+  }
+
+  /* Add responsive behavior for smaller screens */
+  @media (max-width: 1024px) {
+    .projects {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 768px) {
+    .projects {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .projects-page {
+    padding: 2rem 0;
+  }
+  
+  .page-description {
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+    color: #666;
+  }
+  
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+  
+  @media (max-width: 768px) {
+    .projects-grid {
+      grid-template-columns: 1fr;
+    }
+  } 
+
+  .project-page {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .project-header {
+    text-align: center;
+    margin-bottom: calc(var(--grid-unit) * 8);
+  }
+
+  .project-title {
+    font-family: var(--font-heading-primary);
+    font-size: 3.5rem;
+    font-weight: 900;
+    color: var(--color-accent);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    line-height: 1.1;
+    margin-bottom: calc(var(--grid-unit) * 3);
+  }
+
+  .project-description {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    color: var(--color-text-secondary);
+    margin-bottom: calc(var(--grid-unit) * 4);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .project-rule {
+    height: 4px;
+    background-color: var(--color-accent);
+    border: none;
+    width: 120px;
+    margin: 0 auto;
+  }
+
+  .posts-list {
+    display: flex;
+    flex-direction: column;
+    gap: calc(var(--grid-unit) * 6);
+  }
+
+  .post-item {
+    border-bottom: 1px solid var(--color-border);
+    padding-bottom: calc(var(--grid-unit) * 4);
+  }
+
+  .post-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  .post-title {
+    font-family: var(--font-heading-secondary);
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: calc(var(--grid-unit) * 2);
+  }
+
+  .post-title a {
+    color: var(--color-text-primary);
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+
+  .post-title a:hover,
+  .post-title a:focus {
+    color: var(--color-accent);
+  }
+
+  .post-meta {
+    display: flex;
+    flex-direction: column;
+    gap: calc(var(--grid-unit));
+    margin-bottom: calc(var(--grid-unit) * 2);
+  }
+
+  .post-date {
+    font-family: var(--font-mono);
+    font-size: 0.9rem;
+    color: var(--color-text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .post-reading-time {
+    font-family: var(--font-mono);
+    font-size: 0.9rem;
+    color: var(--color-text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .post-reading-time::before {
+    content: "•";
+    margin: 0 calc(var(--grid-unit));
+    color: var(--color-border);
+  }
+
+  .post-categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: calc(var(--grid-unit) / 2);
+  }
+
+  .category {
+    background-color: var(--color-text-primary);
+    color: white;
+    padding: calc(var(--grid-unit) / 4) calc(var(--grid-unit) / 2);
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border-radius: 2px;
+  }
+
+  /* Dark mode category styles */
+  :global([data-theme="dark"]) .category {
+    background-color: var(--color-surface);
+    color: var(--color-text-primary);
+    border: 1px solid var(--color-border);
+  }
+
+  .post-excerpt {
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+    margin-bottom: calc(var(--grid-unit) * 2);
+    font-size: 1.1rem;
+  }
+
+  .learn-more {
+    font-family: var(--font-heading-secondary);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-accent);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.2s ease;
+  }
+
+  .learn-more:hover,
+  .learn-more:focus {
+    color: var(--color-text-primary);
+  }
+
+  .no-posts {
+    text-align: center;
+    padding: calc(var(--grid-unit) * 6);
+    color: var(--color-text-muted);
+    font-style: italic;
+  }
+
+  .no-posts code {
+    background-color: var(--color-surface);
+    padding: 2px 4px;
+    border-radius: 3px;
+    font-family: var(--font-mono);
+  }
+
+  .back-to-project {
+    font-family: var(--font-heading-secondary);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-accent);
+    padding: calc(var(--grid-unit)) calc(var(--grid-unit) * 2);
+    border: 2px solid var(--color-accent);
+    border-radius: 4px;
+    transition: all 0.2s ease;
+    display: inline-block;
+  }
+
+  .back-to-project:hover,
+  .back-to-project:focus {
+    background-color: var(--color-accent);
+    color: white;
+    text-decoration: none;
+  }
+
+  .post-footer {
+    border-top: 1px solid var(--color-border);
+    padding-top: calc(var(--grid-unit) * 3);
+    display: flex;
+    flex-direction: column;
+    gap: calc(var(--grid-unit) * 3);
+  }
+
+  @media (max-width: 768px) {
+    .project-title {
+      font-size: 2.5rem;
+    }
+
+    .project-description {
+      font-size: 1.125rem;
+    }
+
+    .post-title {
+      font-size: 1.75rem;
+    }
+
+    .post-meta {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+</style>

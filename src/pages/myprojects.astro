@@ -1,0 +1,206 @@
+---
+import Layout from '../components/Layout.astro';
+import ProjectCard from '../components/ProjectCard.astro';
+
+const base = import.meta.env.BASE_URL;
+const mdProjGlob = import.meta.glob('../content/myprojects/*.md', { eager: true });
+const mdxProjGlob = import.meta.glob('../content/myprojects/*.mdx', { eager: true });
+const allProjects = [...Object.values(mdProjGlob), ...Object.values(mdxProjGlob)] as any[];
+
+// Sort all projects by project_num (ascending order: 1, 2, 3, etc.)
+const sortedProjects = allProjects
+  .sort((a: any, b: any) => {
+    // Sort by project_num - projects without project_num go to end
+    const aNum = a.frontmatter.project_num || 999;
+    const bNum = b.frontmatter.project_num || 999;
+    return aNum - bNum;
+  });
+
+// Group projects by category
+const engineeringProjects = sortedProjects.filter(project => 
+  project.frontmatter.category === 'engineering'
+);
+const diyProjects = sortedProjects.filter(project => 
+  project.frontmatter.category === 'diy'
+);
+---
+
+<Layout title="Projects" description="All projects.">
+  <div class="project-page">
+    <section class="demo-section">
+      <div class="container">
+        <h1 class="section-title">All Projects</h1>
+        <p class="project-description">
+          Browse projects by category.
+        </p>
+        <hr class="project-rule" />
+
+        <!-- Engineering Projects Section -->
+        <div class="project-card">
+          <div class="card-image">
+            <img src="/images/granJamTestingThumbnail.jpg" alt="Engineering Projects" />
+          </div>
+          <div class="card-content">
+            <a href=={`${base}engineering-projects/`}>
+              <h2>Engineering Projects</h2>
+            </a>
+            <p>
+              Projects completed while studying biomedical engineering at Rutgers University and mechanical engineering at Carnegie Mellon University.
+            </p>
+            <a href={`${base}engineering-projects/`} class="btn btn-primary">SEE MORE</a>
+          </div>
+        </div>
+
+        <!-- DIY Design & Fabrication Section -->
+        <div class="project-card">
+          <div class="card-image">
+            <img src="/images/DIYprojects-thumbnail.jpg" alt="DIY Design & Fabrication" />
+          </div>
+          <div class="card-content">
+            <a href={`${base}DIYdesign/`}>
+              <h2>DIY Design & Fabrication</h2>
+            </a>
+            <p>
+              Mechanical engineering master's level course at Carnegie Mellon University that focuses on product design and fabrication.
+            </p>
+            <a href={`${base}DIYdesign/`} class="btn btn-primary">SEE MORE</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="hero-actions">
+      <a href={`${base}allprojects/`} class="btn btn-primary">View All Projects</a>
+    </div>
+  </div>
+</Layout>
+
+<style>
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--content-padding);
+  }
+
+  .demo-section {
+    padding: calc(var(--grid-unit) * 8) 0;
+  }
+
+  .section-title {
+    font-family: var(--font-heading-secondary);
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: var(--color-accent);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: calc(var(--grid-unit) * 6);
+    text-align: center;
+  }
+
+  .project-page {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .project-description {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    color: var(--color-text-secondary);
+    margin-bottom: calc(var(--grid-unit) * 4);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .project-rule {
+    height: 4px;
+    background-color: var(--color-accent);
+    border: none;
+    width: 120px;
+    margin: 0 auto calc(var(--grid-unit) * 8);
+  }
+
+  .project-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: calc(var(--grid-unit) * 6);
+    align-items: center;
+    padding: calc(var(--grid-unit) * 4);
+    background-color: var(--color-surface);
+    border-radius: 8px;
+    margin-bottom: calc(var(--grid-unit) * 8);
+    transition: transform 0.2s ease;
+  }
+
+  .project-card:hover {
+    transform: translateY(-2px);
+  }
+
+  .project-card:last-child {
+    margin-bottom: 0;
+  }
+
+  .card-image {
+    overflow: hidden;
+    border-radius: 8px;
+  }
+
+  .card-image img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    margin: 0;
+    border: none;
+  }
+
+  .project-card:hover .card-image img {
+    transform: scale(1.05);
+  }
+
+  .card-content {
+    display: flex;
+    flex-direction: column;
+    gap: calc(var(--grid-unit) * 3);
+  }
+
+  .card-content h2 {
+    margin: 0;
+  }
+
+  .card-content p {
+    margin: 0;
+  }
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .section-title {
+      font-size: 2rem;
+    }
+
+    .project-description {
+      font-size: 1.125rem;
+    }
+
+    .project-card {
+      grid-template-columns: 1fr;
+      gap: calc(var(--grid-unit) * 4);
+      text-align: center;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .demo-section {
+      padding: calc(var(--grid-unit) * 4) 0;
+    }
+
+    .project-card {
+      padding: calc(var(--grid-unit) * 3);
+    }
+
+    .card-image img {
+      height: 200px;
+    }
+  }
+</style>

@@ -1,0 +1,300 @@
+---
+import Layout from '../components/Layout.astro';
+import ProjectCard from '../components/ProjectCard.astro';
+const base = import.meta.env.BASE_URL;
+
+const mdProjGlob = import.meta.glob('../content/myprojects/*.md', { eager: true });
+const mdxProjGlob = import.meta.glob('../content/myprojects/*.mdx', { eager: true });
+
+const allProjects = [...Object.values(mdProjGlob), ...Object.values(mdxProjGlob)] as any[];
+
+// Filter for engineering projects only
+const engineeringProjects = allProjects.filter((proj: any) => 
+  proj.frontmatter.type === 'engineering'
+);
+
+const sortedProjects = engineeringProjects
+  .sort((a: any, b: any) => {
+    // Sort by project_num - projects without project_num go to end
+    const aNum = a.frontmatter.project_num || 999;
+    const bNum = b.frontmatter.project_num || 999;
+    return aNum - bNum;
+  });
+---
+
+<Layout title="Engineering Projects" description="All engineering projects.">
+  <div class="project-page">
+    <section class="demo-section">
+      <div class="container">
+        <h1 class="section-title">Engineering Projects</h1>
+        <p class="project-description">
+          Collaborating, designing, and fabricating to create unique engineering solutions.
+        </p>
+        <hr class="project-rule" />
+
+      {sortedProjects.length > 0 ? (
+        <div class="projects">
+          {sortedProjects.map((proj: any) => (
+            <ProjectCard 
+              frontmatter={proj.frontmatter} 
+              slug={proj.file.split('/').pop()?.replace(/\.(md|mdx)$/, '')} 
+            />
+          ))}
+        </div>
+        ) : (
+          <div class="no-projects">
+            <p>No engineering projects available yet.</p>
+          </div>
+        )}
+      </div>
+    </section>
+  </div>
+</Layout>
+
+<style>
+  .container {
+    max-width: 1200px;
+    margin: 0 auto; 
+    padding: 0 var(--content-padding);
+  }
+
+  .demo-section {
+    padding: calc(var(--grid-unit) * 8) 0;
+  }
+
+  .section-title {
+    font-family: var(--font-heading-secondary);
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: var(--color-accent);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: calc(var(--grid-unit) * 6);
+    text-align: center;
+  }
+
+  .projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Arrange cards in 3 columns */
+    gap: calc(var(--grid-unit) * 3);
+    margin-bottom: calc(var(--grid-unit) * 6);
+  }
+
+  /* Add responsive behavior for smaller screens */
+  @media (max-width: 1024px) {
+    .projects {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (max-width: 768px) {
+    .projects {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .projects-page {
+    padding: 2rem 0;
+  }
+  
+  .page-description {
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+    color: #666;
+  }
+  
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+  }
+  
+  @media (max-width: 768px) {
+    .projects-grid {
+      grid-template-columns: 1fr;
+    }
+  } 
+
+  .project-page {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .project-header {
+    text-align: center;
+    margin-bottom: calc(var(--grid-unit) * 8);
+  }
+
+  .project-title {
+    font-family: var(--font-heading-primary);
+    font-size: 3.5rem;
+    font-weight: 900;
+    color: var(--color-accent);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    line-height: 1.1;
+    margin-bottom: calc(var(--grid-unit) * 3);
+  }
+
+  .project-description {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    color: var(--color-text-secondary);
+    margin-bottom: calc(var(--grid-unit) * 4);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+  .project-rule {
+    height: 4px;
+    background-color: var(--color-accent);
+    border: none;
+    width: 120px;
+    margin: 0 auto;
+  }
+
+  .projects-list {
+    display: flex;
+    flex-direction: column;
+    gap: calc(var(--grid-unit) * 6);
+  }
+
+  .proj-item {
+    border-bottom: 1px solid var(--color-border);
+    padding-bottom: calc(var(--grid-unit) * 4);
+  }
+
+  .proj-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  .proj-title {
+    font-family: var(--font-heading-secondary);
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: calc(var(--grid-unit) * 2);
+  }
+
+  .proj-title a {
+    color: var(--color-text-primary);
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+
+  .proj-title a:hover,
+  .proj-title a:focus {
+    color: var(--color-accent);
+  }
+
+  .proj-meta {
+    display: flex;
+    flex-direction: column;
+    gap: calc(var(--grid-unit));
+    margin-bottom: calc(var(--grid-unit) * 2);
+  }
+
+  .proj-date {
+    font-family: var(--font-mono);
+    font-size: 0.9rem;
+    color: var(--color-text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .proj-reading-time {
+    font-family: var(--font-mono);
+    font-size: 0.9rem;
+    color: var(--color-text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+
+  .proj-reading-time::before {
+    content: "•";
+    margin: 0 calc(var(--grid-unit));
+    color: var(--color-border);
+  }
+
+  .proj-categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: calc(var(--grid-unit) / 2);
+  }
+
+  .category {
+    background-color: var(--color-text-primary);
+    color: white;
+    padding: calc(var(--grid-unit) / 4) calc(var(--grid-unit) / 2);
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    border-radius: 2px;
+  }
+
+  /* Dark mode category styles */
+  :global([data-theme="dark"]) .category {
+    background-color: var(--color-surface);
+    color: var(--color-text-primary);
+    border: 1px solid var(--color-border);
+  }
+
+  .proj-excerpt {
+    color: var(--color-text-secondary);
+    line-height: 1.6;
+    margin-bottom: calc(var(--grid-unit) * 2);
+    font-size: 1.1rem;
+  }
+
+  .learn-more {
+    font-family: var(--font-heading-secondary);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--color-accent);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.2s ease;
+  }
+
+  .learn-more:hover,
+  .learn-more:focus {
+    color: var(--color-text-primary);
+  }
+
+  .no-projects {
+    text-align: center;
+    padding: calc(var(--grid-unit) * 6);
+    color: var(--color-text-muted);
+    font-style: italic;
+  }
+
+  .no-projects code {
+    background-color: var(--color-surface);
+    padding: 2px 4px;
+    border-radius: 3px;
+    font-family: var(--font-mono);
+  }
+
+  @media (max-width: 768px) {
+    .project-title {
+      font-size: 2.5rem;
+    }
+
+    .project-description {
+      font-size: 1.125rem;
+    }
+
+    .proj-title {
+      font-size: 1.75rem;
+    }
+
+    .proj-meta {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+</style>
