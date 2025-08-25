@@ -3,8 +3,8 @@ import { readdir } from 'fs/promises';
 import { join } from 'path';
 
 test.describe('Blog Structure', () => {
-  test('no markdown files should exist in src/pages/blog/', async () => {
-    // Check that no .md files exist in the pages/blog directory
+  test('no markdown files should exist in src/pages/myprojects/', async () => {
+    // Check that no .md files exist in the pages/myprojects directory
     const pagesDir = join(process.cwd(), 'src/pages/myprojects');
     let files = [];
     

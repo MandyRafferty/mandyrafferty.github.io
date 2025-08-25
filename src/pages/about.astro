@@ -104,9 +104,129 @@ const pageDescription = `Learn more about ${author.name} and the ${title} projec
       </ul>
     </div> -->
   </div>
+
+  <!-- <div class="project-page">
+      <section class="demo-section">
+          <div class="container">
+              <h1 class="section-title">Work Experience</h1>
+              <hr class="project-rule" />
+
+              <div class="project-card">
+                  <div class="card-content-tight">
+                        <h3>Course Assistant</h3>
+                      <p class="company-name"><i>Carnegie Mellon University</i></p>
+                      <p>
+                          Assisting graduate level Applied Finite Elemental Analysis course using ANSYS.
+                      </p>
+                  </div>
+              </div>
+
+              <div class="project-card">
+                  <div class="card-content-tight">
+                      <a href="https://strongarm.com/">
+                          <h3>Strongarm Designs</h3>
+                      </a>
+                      <p class="company-name"><i>Quality Engineer</i></p>
+                      <p>
+                          Investigated deviations in manufacturing processes using 5 whys, fishbone diagrams,
+                          Visual ERP software, and Excel, then authored CAPAs and executed corrective
+                          actions that reduced 92% of future recurrences.
+                      </p>
+                  </div>
+              </div>
+          </div>
+      </section>
+  </div> -->
+</body>
 </Layout>
 
 <style>
+  .project-page {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .project-description {
+    font-size: 1.25rem;
+    line-height: 1.6;
+    color: var(--color-text-secondary);
+    margin-bottom: calc(var(--grid-unit) * 4);
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+
+  .project-rule {
+    height: 4px;
+    background-color: var(--color-accent);
+    border: none;
+    width: 120px;
+    margin: 0 auto calc(var(--grid-unit) * 8);
+  }
+
+  .project-card {
+    display: block; /* remove the grid */
+    padding: calc(var(--grid-unit) * 3);
+    background-color: var(--color-surface);
+    border-radius: 8px;
+    margin-bottom: calc(var(--grid-unit) * 8);
+    transition: transform 0.2s ease;
+  }
+
+  .project-card:hover {
+    transform: translateY(-2px);
+  }
+
+  .project-card:last-child {
+    margin-bottom: 0;
+  }
+
+  .card-content {
+    display: flex;
+    flex-direction: column;
+    gap: calc(var(--grid-unit) * 3);
+  }
+
+  .card-content h2 {
+    margin: 0;
+  }
+
+  .card-content h3 {
+    margin-bottom: 0rem; /* tighten spacing below title */
+  }
+
+  .card-content p {
+    margin: 0;
+  }
+
+  .company-name {
+    margin-top: -1rem;
+    margin-bottom: 0rem; /* keeps it snug under the heading */
+    font-style: italic;     /* optional since you already wrapped <i> */
+  }
+
+  .demo-section {
+    padding: calc(var(--grid-unit) * 8) 0;
+  }
+
+  .section-title {
+    font-family: var(--font-heading-secondary);
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: var(--color-accent);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    margin-bottom: calc(var(--grid-unit) * 6);
+    text-align: center;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--content-padding);
+  }
+
   .about-page {
     max-width: 800px;
     margin: 0 auto;
@@ -284,6 +404,38 @@ const pageDescription = `Learn more about ${author.name} and the ${title} projec
     .content-section p,
     .content-section li {
       font-size: 1rem;
+    }
+  }
+
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .section-title {
+      font-size: 2rem;
+    }
+
+    .project-description {
+      font-size: 1.125rem;
+    }
+
+    .project-card {
+      grid-template-columns: 1fr;
+      gap: calc(var(--grid-unit) * 4);
+      text-align: center;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .demo-section {
+      padding: calc(var(--grid-unit) * 4) 0;
+    }
+
+    .project-card {
+      padding: calc(var(--grid-unit) * 3);
+    }
+
+    .card-image img {
+      height: 200px;
     }
   }
 </style>
