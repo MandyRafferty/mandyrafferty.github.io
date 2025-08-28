@@ -2,6 +2,7 @@
 title: "Marble Statue Transient Thermal Analysis"
 date: "2025-06-03"
 project_num: 5
+type: "engineering"
 description: "Using ANSYS for a Thermal Transient Analysis."
 excerpt: "Transient thermal analysis of a marble statue stuck to a steel plate completed using ANSYS Mechanical."
 categories: ["FEA", "ANSYS"]

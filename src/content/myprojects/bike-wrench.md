@@ -4,6 +4,7 @@ date: "2025-06-08"
 featured: true
 featured_order: 3
 project_num: 2
+type: "engineering"
 description: "Exploring the fascinating intersection between Bauhaus functionalism and monumental design"
 excerpt: "Reducing material usage in a wrench design through topology optimization using ANSYS Mechanical."
 categories: ["ANSYS", "FEA", "Design"]
@@ -25,12 +26,13 @@ thumbnail: '/images/WrenchThumbnail.jpg'
       <li><p>Parameterized the fillet radius (5–20 mm) and thickness (5–10 mm) and analyzed their effects on stress, deformation, and mass.</p></li>
       <li><p>Performed response surface optimization to determine the most effective combination of parameters.</p></li>
       <li><p>Modified the wrench in ANSYS SpaceClaim and verified the results by performing another static structural analysis with the updated geometry.</p></li>
+     </ul>
     <h2>Result</h2>
      <ul>
       <li><p>Topology optimization suggested removing material from the middle of the handle, leading to a redesigned wrench weighing 34.2 g.</p></li>
       <li><p>The final CAD model, validated through static analysis, resulted in a maximum stress of 143.01 MPa and deformation of 0.81 mm, meeting all design constraints.</p></li>
       <li><p>Demonstrated that geometry and topology optimization effectively reduced weight while maintaining structural performance.</p></li>
-      </ul>
+     </ul>
   </div>
 
   <!-- Right Column - Images -->

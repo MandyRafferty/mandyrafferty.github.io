@@ -25,6 +25,7 @@ thumbnail: '/images/Granular Jamming Wrist Brace.jpg'
       <li><p>Designed and fabricated a cast that incorporates a granular jamming layer consisting of coffee grounds enclosed in a latex membrane.</p></li>
       <li><p>Conducted three-point bend tests on jamming layer to evaluate applied force and extension, then calculate energy dissipation and Young’s modulus.</p></li>
       <li><p>Qualitatively validated the cast’s comfort in its soft state and its effectiveness in restricting wrist motion when rigid through user testing.</p></li>
+     </ul>
     <h2>Result</h2>
      <ul>
       <li><p>Young’s modulus of the cast increased by approximately 47 times when in the rigid state compared to the soft state.</p></li>

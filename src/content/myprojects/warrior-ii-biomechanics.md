@@ -3,6 +3,7 @@ title: "Biomechanics of Warrior II Yoga Pose"
 date: "2025-06-08"
 featured: false
 project_num: 6
+type: "engineering"
 description: "Exploring the fascinating intersection between Bauhaus functionalism and monumental design"
 excerpt: "Analyzed the muscle and joint reaction forces at the knee, confirming that proper form minimizes forces, thereby reducing injury."
 categories: ["Biomechanics", "Static Equilibrium"]

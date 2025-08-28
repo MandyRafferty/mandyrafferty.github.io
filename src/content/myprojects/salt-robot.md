@@ -60,8 +60,11 @@ thumbnail: '/images/saltRobotThumbnail.png'
 
 ## Click Below to Watch Demo Video!
 <!-- Prototype Video -->
-[![Project Demo Video](https://img.youtube.com/vi/uhJG0-Z05Kw/maxresdefault.jpg)](https://www.youtube.com/watch?v=uhJG0-Z05Kw)
-
+<p align="center">
+  <a href="https://www.youtube.com/watch?v=uhJG0-Z05Kw">
+    <img src="https://img.youtube.com/vi/uhJG0-Z05Kw/maxresdefault.jpg" alt="Project Demo Video" width="750">
+  </a>
+</p>
 <!-- <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 my-12">
   <div class="lg:col-span-2 prose prose-lg max-w-none">
     <h2>Prototype Demonstration</h2>

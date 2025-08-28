@@ -2,6 +2,7 @@
 title: "2D Robot Trajectory Visualizer"
 date: "2025-06-04"
 project_num: 4
+type: "engineering"
 description: "Mapping 2D trajectory grids and cost maps in C++."
 excerpt: "C++ visualizer for robot movements in 2D grid worlds to visualize simple trajectories and their cost map."
 categories: ["C++", "Design", "UI/UX"]
