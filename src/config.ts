@@ -17,7 +17,7 @@ export interface SiteConfig {
 }
 
 export const config: SiteConfig = {
-  title: "Volks-Typo",
+  title: "Portfolio",
   description: "Projects exploring design and engineering.",
   author: {
     name: "Mandy Rafferty",

@@ -38,9 +38,9 @@ const publishedTime = frontmatter.date ? new Date(frontmatter.date).toISOString(
   title={pageTitle} 
   description={frontmatter.description || frontmatter.excerpt}
   type="article"
-  <!-- publishedTime={publishedTime} -->
+>
   <article class="project-post">
-    <header class="post-header">
+    <header class="project-header">
       <h1 class="post-title">{frontmatter.title}</h1>
       
       <div class="post-meta">
@@ -80,7 +80,7 @@ const publishedTime = frontmatter.date ? new Date(frontmatter.date).toISOString(
     </div>
 
     <footer class="post-footer">
-      {frontmatter.tags && frontmatter.tags.length > 0 && (
+      <!-- {frontmatter.tags && frontmatter.tags.length > 0 && (
         <div class="post-tags">
           <span class="tags-label">Tags:</span>
           <div class="tag-list">
@@ -89,7 +89,7 @@ const publishedTime = frontmatter.date ? new Date(frontmatter.date).toISOString(
             ))}
           </div>
         </div>
-      )}
+      )} -->
       
       <div class="post-navigation">
         <a href={`${base}myprojects/`} class="back-to-project">← Back to Projects</a>
@@ -105,7 +105,7 @@ const publishedTime = frontmatter.date ? new Date(frontmatter.date).toISOString(
     margin: 0 auto;
   }
 
-  .post-header {
+  .project-header {
     margin-bottom: calc(var(--grid-unit) * 6);
   }
 

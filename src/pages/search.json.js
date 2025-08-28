@@ -1,6 +1,6 @@
 export async function GET() {
   // Get all blog posts
-  const posts = await import.meta.glob('../content/project/*.md');
+  const posts = await import.meta.glob('../content/myprojects/*.md');
   
   const searchData = [];
   

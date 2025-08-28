@@ -42,12 +42,11 @@ thumbnail: '/images/Granular Jamming Wrist Brace.jpg'
 </div>
 
 <!-- Section 3: Single Large Image -->
-<div class="grid grid-cols-1 lg:grid-cols-3 gap-8 my-12">
+<!-- <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 my-12">
   <div class="lg:col-span-2 prose prose-lg max-w-none">
     <h2>Fabrication Process</h2>
-    <!-- <p>This takes up 2/3 of the width...</p> -->
   </div>
   <div>
     <img src="/images/Semi-Autonomous De-Icing Robot.png" alt="Hero" class="w-full h-full object-cover rounded-lg shadow-md" />
   </div>
-</div>
+</div> -->

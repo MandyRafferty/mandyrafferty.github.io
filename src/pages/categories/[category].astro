@@ -58,7 +58,7 @@ const base = import.meta.env.BASE_URL;
             </a>
           </h2>
           
-          <div class="post-meta">
+          {/* <div class="post-meta">
             <time class="post-date" datetime={post.frontmatter.date}>
               {new Date(post.frontmatter.date).toLocaleDateString('en-US', {
                 year: 'numeric',
@@ -66,13 +66,13 @@ const base = import.meta.env.BASE_URL;
                 day: 'numeric'
               })}
             </time>
-          </div>
+          </div> */}
           
           {post.frontmatter.excerpt && (
             <p class="project-excerpt">{post.frontmatter.excerpt}</p>
           )}
           
-          <a href={`${base}project/${post.file.split('/').pop()?.replace('.md', '')}`} class="read-more">
+          <a href={`${base}myprojects/${post.file.split('/').pop()?.replace('.md', '')}`} class="read-more">
             Read More →
           </a>
         </article>
