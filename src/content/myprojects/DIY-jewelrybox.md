@@ -16,7 +16,7 @@ thumbnail: '/images/jewelryBoxThumbail.jpg'
   <div style="font-size: 1.0rem; line-height: 1.0;">
     <h2>Aim</h2>
      <ul>
-      <li><p>To fabricate a product of our choice that makes you or someone else happy.</p></li>
+      <li><p>To fabricate a product of your choice that makes you or someone else happy.</p></li>
       </ul>
     <h2>Approach</h2>
      <ul>

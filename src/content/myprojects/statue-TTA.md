@@ -14,21 +14,16 @@ thumbnail: '/images/TTAmarble_statue.png'
   <div style="font-size: 1.0rem; line-height: 1.0;">
     <h2>Aim</h2>
      <ul>
-      <li><p>Optimize the design of a bike wrench to minimize mass while ensuring that maximum stress remains below 160 MPa and total deformation is under 1 mm.</p></li>
-      <li><p>Apply topology optimization to refine the design to reduce material usage while maintaining structural integrity.</p></li>
+      <li><p>Perform a transient thermal analysis of a marble statue to determine what time it freezes stuck to the top of a steel plate after being left on it overnight.</p></li>
       </ul>
     <h2>Approach</h2>
      <ul>
-      <li><p>Conducted static structural analysis in ANSYS Mechanical with a 500N applied force and fixed support at the wrench head.</p></li>
-      <li><p>Parameterized the fillet radius (5–20 mm) and thickness (5–10 mm) and analyzed their effects on stress, deformation, and mass.</p></li>
-      <li><p>Performed response surface optimization to determine the most effective combination of parameters.</p></li>
-      <li><p>Modified the wrench in ANSYS SpaceClaim and verified the results by performing another static structural analysis with the updated geometry.</p></li>
+      <li><p>Set up a transient thermal analysis system in Ansys Workbench with ¼ symmetry, then applied the proper boundary conditions, including ambient temperature and convection.</p></li>
+      <li><p>Applied a temperature probe to the contact surface between the plate and statue to capture the minimum temperature at the contact surface.</p></li>
       </ul>
     <h2>Result</h2>
      <ul>
-      <li><p>Topology optimization suggested removing material from the middle of the handle, leading to a redesigned wrench weighing 34.2 g.</p></li>
-      <li><p>The final CAD model, validated through static analysis, resulted in a maximum stress of 143.01 MPa and deformation of 0.81 mm, meeting all design constraints.</p></li>
-      <li><p>Demonstrated that geometry and topology optimization effectively reduced weight while maintaining structural performance.</p></li>
+      <li><p>Found the exact time that the model reaches above freezing (>0&deg;C) in seconds.</p></li>
       </ul>
   </div>
 

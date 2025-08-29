@@ -30,7 +30,7 @@ thumbnail: '/images/WrenchThumbnail.jpg'
     <h2>Result</h2>
      <ul>
       <li><p>Topology optimization suggested removing material from the middle of the handle, leading to a redesigned wrench weighing 34.2 g.</p></li>
-      <li><p>The final CAD model, validated through static analysis, resulted in a maximum stress of 143.01 MPa and deformation of 0.81 mm, meeting all design constraints.</p></li>
+      <li><p>The final CAD model, validated through static analysis, resulted in a maximum stress of 143.01 MPa and deformation of 0.81 mm, meeting all design objectives.</p></li>
       <li><p>Demonstrated that geometry and topology optimization effectively reduced weight while maintaining structural performance.</p></li>
      </ul>
   </div>

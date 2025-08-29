@@ -33,7 +33,7 @@ thumbnail: '/images/saltRobotThumbnail.png'
     <h2>Result</h2>
      <ul>
       <li><p>Developed a semi-autonomous de-icing robot with remote-controlled operation through a Bluetooth-connected interface.</p></li>
-      <li><p>​Integrated multiple subsystems: salt solution tank, dual-pump spraying system, tracked locomotion for icy terrain, </p></li>and sensors for bystander detection and tank monitoring.
+      <li><p>​Integrated multiple subsystems: salt solution tank, dual-pump spraying system, tracked locomotion for icy terrain, and sensors for bystander detection and tank monitoring.</p></li>
       <li><p>Achieved key design goals: portability, safety, low operating noise, and user convenience in winter conditions.</p></li>
       </ul>
   </div>
