@@ -289,11 +289,12 @@ const { base = '' } = Astro.site ? { base: import.meta.env.BASE_URL } : { base: 
 
   .icon-svg {
     color: var(--color-accent);
-    height: 48px;
+    height: 40px;
     width: auto;
     max-width: 280px;
     border: none !important; /* Override global img styles */
     margin: 0 !important; /* Override global img styles */
+    object-fit: contain;
   }
 
   .header-controls {
@@ -723,9 +724,13 @@ const { base = '' } = Astro.site ? { base: import.meta.env.BASE_URL } : { base: 
     }
 
     .icon-svg {
-      height: 36px;
+      height: 40px;
       width: auto;
-      max-width: 180px;
+      max-width: 280px;
+      max-height: 48px; /* Add this to prevent vertical expansion */
+      border: none !important;
+      margin: 0 !important;
+      object-fit: contain; /* Add this to maintain aspect ratio within bounds */
     }
     
     .header-controls {

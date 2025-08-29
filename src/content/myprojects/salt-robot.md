@@ -65,19 +65,3 @@ thumbnail: '/images/saltRobotThumbnail.png'
     <img src="https://img.youtube.com/vi/uhJG0-Z05Kw/maxresdefault.jpg" alt="Project Demo Video" width="750">
   </a>
 </p>
-<!-- <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 my-12">
-  <div class="lg:col-span-2 prose prose-lg max-w-none">
-    <h2>Prototype Demonstration</h2>
-  </div>
-  <div>
-    <video 
-      src="/videos/Remote Controlled De-Icing Robot.mp4" 
-      controls
-      muted
-      style="width: 70%; margin: 0 auto; display: block;"
-      class="rounded-lg shadow-md"
-    >
-      Your browser does not support the video tag.
-    </video>
-  </div>
-</div> -->
