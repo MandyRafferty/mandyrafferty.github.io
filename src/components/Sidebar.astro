@@ -68,7 +68,7 @@ const categories = [...new Set(allPosts.flatMap((post: any) => post.frontmatter.
   )} -->
 
   <!-- Categories Section -->
-  {categories.length > 0 && (
+  <!-- {categories.length > 0 && (
     <section class="categories">
       <h3 class="section-title">Skills</h3>
       <ul class="category-list">
@@ -77,6 +77,22 @@ const categories = [...new Set(allPosts.flatMap((post: any) => post.frontmatter.
             <a href={`${base}/categories/${category.toLowerCase()}`} class="category-link">
               {category}
             </a>
+          </li>
+        ))}
+      </ul>
+    </section>
+  )} -->
+
+  <!-- Hyperlinks removed, to add TBD -->
+  {categories.length > 0 && (
+    <section class="categories">
+      <h3 class="section-title">Skills</h3>
+      <ul class="category-list">
+        {categories.map(category => (
+          <li class="category-item">
+            <span class="category-link">
+              {category}
+            </span>
           </li>
         ))}
       </ul>
