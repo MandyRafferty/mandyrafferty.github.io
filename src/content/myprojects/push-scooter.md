@@ -1,7 +1,7 @@
 ---
 title: "Foldable Push Scooter"
 date: "2025-06-03"
-project_num: 7
+project_num: 8
 type: "engineering"
 description: "Collaboratively designing a foldable push scooter using SolidWorks."
 excerpt: "Collaborated with three team members to design a 3D CAD model of a foldable push scooter."

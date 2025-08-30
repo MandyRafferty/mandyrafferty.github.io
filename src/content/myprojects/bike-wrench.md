@@ -7,7 +7,7 @@ project_num: 2
 type: "engineering"
 description: "Exploring the fascinating intersection between Bauhaus functionalism and monumental design"
 excerpt: "Reducing material usage in a wrench design through topology optimization using ANSYS Mechanical."
-categories: ["ANSYS", "FEA", "Design"]
+categories: ["ANSYS", "FEA", "Product Design", "Topology Optimization"]
 tags: ["Geometry Optimization", "Product Design"]
 thumbnail: '/images/WrenchThumbnail.jpg'
 ---

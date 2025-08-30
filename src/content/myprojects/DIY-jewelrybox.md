@@ -43,7 +43,7 @@ thumbnail: '/images/jewelryBoxThumbail.jpg'
   <div class="slides">
     <div class="slide active">
       <img src="/images/DIY Jewelry Box/jewelrybox-sketches.jpg" alt="Image 1">
-      <div class="caption">Initial design sketches</div>
+      <div class="caption">Initial ideation design sketches</div>
     </div>
     <div class="slide">
       <img src="/images/DIY Jewelry Box/jewelrybox-prototype.jpg" alt="Image 2">
@@ -55,7 +55,7 @@ thumbnail: '/images/jewelryBoxThumbail.jpg'
     </div>
     <div class="slide">
       <img src="/images/DIY Jewelry Box/jewelrybox-finalsketch.jpg" alt="Image 4">
-      <div class="caption">Final sketch</div>
+      <div class="caption">Final concept sketch</div>
     </div>
     <div class="slide">
       <img src="/images/DIY Jewelry Box/jewelrybox-fab1.jpg" alt="Image 5">
