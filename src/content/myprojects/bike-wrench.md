@@ -28,6 +28,7 @@ thumbnail: '/images/Bike Wrench/WrenchThumbnail.jpg'
 - Demonstrated that geometry and topology optimization effectively reduced weight while maintaining structural performance.
 
 ## Ansys Topology Optimization
+Removed material based on these results.
 <div class="my-12 text-center">
   <a href="/images/Bike Wrench/Surface Topology Optimization.png" class="inline-block">
     <img src="/images/Bike Wrench/Surface Topology Optimization.png" alt="Topology optimization" class="rounded-lg shadow-md cursor-pointer hover:opacity-90 transition-opacity" style="width: 60%; height: auto;" />
@@ -42,7 +43,7 @@ thumbnail: '/images/Bike Wrench/WrenchThumbnail.jpg'
   </figure>
   <figure>
     <img src="/images/Bike Wrench/WrenchStressResults.png" alt="Ansys Mechanical stress results">
-    <figcaption>Wrench stress results</figcaption>
+    <figcaption>Wrench von Mises stress results</figcaption>
   </figure>
 </div>
 
