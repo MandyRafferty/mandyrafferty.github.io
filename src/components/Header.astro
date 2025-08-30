@@ -50,17 +50,17 @@ const ewbSlug = ewbProject?.file.split('/').pop()?.replace(/\.(md|mdx)$/, '');
     <div class="header-controls">
       <nav class="main-navigation" role="navigation" aria-label="Main navigation">
         <ul class="nav-list">
-            <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href={base} class="nav-link">Home</a></li>
             <li class="nav-item">
-                <a href="#" class="nav-link">My Projects</a>
+                <a href={base + "myprojects"} class="nav-link">My Projects</a>
                 <ul class="dropdown-menu">
                     <li><a href={`${base}engineering-projects/`} class="dropdown-link">Engineering Projects</a></li>
                     <li><a href={`${base}DIYdesign/`} class="dropdown-link">DIY Design & Fabrication</a></li>
                     <li><a href={`${base}myprojects/${ewbSlug}/`} class="dropdown-link">Engineers Without Borders: Project Kenya</a></li>
                 </ul>
             </li>
-            <li class="nav-item"><a href="#" class="nav-link">About Me</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+            <li class="nav-item"><a href={base + "about"} class="nav-link">About Me</a></li>
+            <li class="nav-item"><a href={base + "contact"} class="nav-link">Contact</a></li>
         </ul>
       </nav>
       
@@ -98,7 +98,7 @@ const ewbSlug = ewbProject?.file.split('/').pop()?.replace(/\.(md|mdx)$/, '');
 <nav class="mobile-menu" id="mobile-menu" aria-label="Mobile navigation">
   <ul class="mobile-nav-list">
     <li><a href={base} class="mobile-nav-link">Home</a></li>
-    <li><a href={base + "blog"} class="mobile-nav-link">My Projects</a></li>
+    <li><a href={base + "myprojects"} class="mobile-nav-link">My Projects</a></li>
     <li><a href={base + "about"} class="mobile-nav-link">About Me</a></li>
     <li><a href={base + "contact"} class="mobile-nav-link">Contact</a></li>
   </ul>

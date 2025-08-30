@@ -6,7 +6,7 @@ project_num: 7
 type: "engineering"
 description: "Exploring the fascinating intersection between Bauhaus functionalism and monumental design"
 excerpt: "Analyzed the muscle and joint reaction forces at the knee, confirming that proper form minimizes forces, thereby reducing injury."
-categories: ["Biomechanics", "Static Equilibrium"]
+categories: ["Biomechanics", "Static Equilibrium", "MATLAB", "Force Body Diagrams"]
 tags: ["Static Equilibrium", "Force Body Diagrams"]
 thumbnail: '/images/warrior2Fig5.png'
 ---

@@ -1,5 +1,5 @@
 ---
-title: "2D Robot Trajectory Visualizer"
+title: "RoboViz: 2D Robot Trajectory Visualizer"
 date: "2025-06-04"
 project_num: 4
 type: "engineering"

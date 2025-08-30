@@ -57,7 +57,7 @@ thumbnail: '/images/Salt Robot/salt CAD.png'
 
 ## Click Below to Watch Demo Video!
 <!-- Prototype Video -->
-<p align="center">
+<p class="text-center">
   <a href="https://www.youtube.com/watch?v=uhJG0-Z05Kw">
     <img src="https://img.youtube.com/vi/uhJG0-Z05Kw/maxresdefault.jpg" alt="Project Demo Video" width="750">
   </a>

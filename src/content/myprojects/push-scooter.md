@@ -35,21 +35,17 @@ thumbnail: '/images/FoldablePushScooter-thumbnail.png'
   </div>
 </div>
 
-<div class="grid grid-cols-1 lg:grid-cols-3 gap-8 my-12">
-  <div class="lg:col-span-2 prose prose-lg max-w-none">
-    <h2>Scooter Animation</h2>
-  </div>
-  <div>
-    <video 
-      src="/videos/Scooter Animation.mp4" 
-      controls
-      muted
-      style="width: 70%; margin: 0 auto; display: block;"
-      class="rounded-lg shadow-md"
-    >
-      Your browser does not support the video tag.
-    </video>
-  </div>
+## Scooter Animation
+<div style="display: flex; justify-content: center; margin: 3rem 0;">
+  <video 
+    src="/videos/Scooter Animation.mp4" 
+    controls
+    muted
+    style="width: 70%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);"
+    class="rounded-lg shadow-md"
+  >
+    Your browser does not support the video tag.
+  </video>
 </div>
 
 <!-- <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 my-12">

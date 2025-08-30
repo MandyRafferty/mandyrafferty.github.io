@@ -5,7 +5,7 @@ project_num: 5
 type: "engineering"
 description: "Using ANSYS for a Thermal Transient Analysis."
 excerpt: "Transient thermal analysis of a marble statue stuck to a steel plate completed using ANSYS Mechanical."
-categories: ["FEA", "ANSYS"]
+categories: ["FEA", "ANSYS", "Thermal Analysis"]
 tags: ["Thermal Analysis", "ANSYS", "FEA"]
 thumbnail: '/images/TTAmarble_statue.png'
 ---
