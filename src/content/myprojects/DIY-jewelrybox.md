@@ -32,8 +32,8 @@ thumbnail: '/images/jewelryBoxThumbail.jpg'
 
   <!-- Right Column - Images -->
   <div style="display: flex; flex-direction: column; align-items: flex-end; gap: 1rem;">
-    <img src="/images/jewelrybox-CAD1.png" alt="CAD model of closed jewelry box" style="width: 90%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);" />
-    <img src="/images/jewelrybox-CAD2.png" alt="CAD model of jewelry box opened" style="width: 90%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);" />
+    <img src="/images/DIY Jewelry Box/jewelrybox-CAD1.png" alt="CAD model of closed jewelry box" style="width: 90%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);" />
+    <img src="/images/DIY Jewelry Box/jewelrybox-CAD2.png" alt="CAD model of jewelry box opened" style="width: 90%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);" />
   </div>
 </div>
 
@@ -50,7 +50,7 @@ thumbnail: '/images/jewelryBoxThumbail.jpg'
       <div class="caption">Small scale cardboard prototype</div>
     </div>
     <div class="slide">
-      <img src="/images/DIY Jewelry Box/jewelrybox-CAD.png" alt="Image 3">
+      <img src="/images/DIY Jewelry Box/jewelrybox-CAD2.png" alt="Image 3">
       <div class="caption">CAD assembly</div>
     </div>
     <div class="slide">

@@ -9,7 +9,7 @@ description: "How CSS Grid enables us to create layouts inspired by Bauhaus and 
 excerpt: "Robot that sprays salt remotely to improve safety and increase accessibility for those challenged by manual labor in harsh winter weather."
 categories: ["Product Design", "Electromechanical Systems", "Fusion 360", "Machining"]
 tags: ["Product Design", "Fabrication"]
-thumbnail: '/images/saltRobotThumbnail.png'
+thumbnail: '/images/Salt Robot/salt CAD.png'
 ---
 
 <div style="display: grid; grid-template-columns: 2fr 1fr; gap: 2rem; margin: 1rem 0;">
@@ -40,22 +40,19 @@ thumbnail: '/images/saltRobotThumbnail.png'
 
   <!-- Right Column - Images -->
   <div style="display: flex; flex-direction: column; align-items: flex-end; gap: 1rem;">
-    <img src="/images/salt CAD.png" alt="CAD model of salt robot" style="width: 90%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);" />
-    <img src="/images/assemblyWithLocomotion.png" alt="Final assembled salt spraying robot" style="width: 90%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);" />
+    <img src="/images/Salt Robot/salt CAD.png" alt="CAD model of salt robot" style="width: 90%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);" />
+    <img src="/images/Salt Robot/assemblyWithLocomotion.png" alt="Final assembled salt spraying robot" style="width: 90%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);" />
   </div>
 </div>
 
 <!-- Section 3: Poster -->
+## Design Expo Poster
 <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 my-12">
-  <div class="lg:col-span-2 prose prose-lg max-w-none">
-    <h2>Design Expo Poster</h2>
-    <!-- <p>This takes up 2/3 of the width...</p> -->
+  <div>
+    <a href="/images/Salt Robot/Semi-Autonomous De-Icing Robot.png">
+      <img src="/images/Salt Robot/Semi-Autonomous De-Icing Robot.png" alt="CMU project poster" class="w-full h-full object-cover rounded-lg shadow-md cursor-pointer hover:opacity-90 transition-opacity" />
+    </a>
   </div>
-    <div>
-      <a href="/images/Semi-Autonomous De-Icing Robot.png">
-        <img src="/images/Semi-Autonomous De-Icing Robot.png" alt="CMU project poster" class="w-full h-full object-cover rounded-lg shadow-md cursor-pointer hover:opacity-90 transition-opacity" />
-      </a>
-    </div>
 </div>
 
 ## Click Below to Watch Demo Video!
