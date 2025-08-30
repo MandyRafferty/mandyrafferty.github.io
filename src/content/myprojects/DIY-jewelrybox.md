@@ -43,19 +43,19 @@ thumbnail: '/images/jewelryBoxThumbail.jpg'
   <div class="slides">
     <div class="slide active">
       <img src="/images/DIY Jewelry Box/jewelrybox-sketches.jpg" alt="Image 1">
-      <div class="caption">Sketches</div>
+      <div class="caption">Initial design sketches</div>
     </div>
     <div class="slide">
       <img src="/images/DIY Jewelry Box/jewelrybox-prototype.jpg" alt="Image 2">
-      <div class="caption">Prototype</div>
+      <div class="caption">Small scale cardboard prototype</div>
     </div>
     <div class="slide">
       <img src="/images/DIY Jewelry Box/jewelrybox-CAD.png" alt="Image 3">
-      <div class="caption">CAD Model</div>
+      <div class="caption">CAD assembly</div>
     </div>
     <div class="slide">
       <img src="/images/DIY Jewelry Box/jewelrybox-finalsketch.jpg" alt="Image 4">
-      <div class="caption">Final Sketch</div>
+      <div class="caption">Final sketch</div>
     </div>
     <div class="slide">
       <img src="/images/DIY Jewelry Box/jewelrybox-fab1.jpg" alt="Image 5">
