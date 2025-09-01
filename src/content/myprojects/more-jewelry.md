@@ -2,7 +2,7 @@
 title: "More Jewelry"
 date: "2024-03-17"
 featured: false
-project_num: 20
+project_num: 35
 type: "personal"
 description: "A collection of handmade jewelry."
 excerpt: "A collection of handmade jewelry."

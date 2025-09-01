@@ -2,7 +2,7 @@
 title: "Beach Photo Bitmap"
 date: "2025-06-12"
 featured: false
-project_num: 11
+project_num: 26
 type: "personal"
 description: "Portable, handheld device that allows surgeons to measure bone density of patients cost effectively."
 excerpt: "Turned a childhood photo into an engineered Father's Day gift."

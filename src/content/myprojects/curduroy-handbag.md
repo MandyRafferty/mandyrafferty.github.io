@@ -2,7 +2,7 @@
 title: "Upcycled Handbag"
 date: "2025-01-14"
 featured: false
-project_num: 10
+project_num: 25
 type: "personal"
 description: "A handbag upcycled from a curduroy shirt and thrifted fabric."
 excerpt: "A handbag upcycled from a curduroy shirt and thrifted fabric."

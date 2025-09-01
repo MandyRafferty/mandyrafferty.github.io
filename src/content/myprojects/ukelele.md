@@ -1,25 +1,25 @@
 ---
-title: "Amber Necklace"
-date: "2024-02-24"
+title: "Ukelele"
+date: "2019-11-13"
 featured: false
-project_num: 32
+project_num: 27
 type: "personal"
-description: "Transformed beads from a bracelet into a necklace."
-excerpt: "Transformed beads from a bracelet into a necklace."
-categories: ["Jewelry Making", "Upcycling"]
-tags: ["Necklace", "Crafts"]
-thumbnail: '/images/Necklaces/amber-necklace.jpg'
+description: "Constructed and painted a ukelele."
+excerpt: "Constructed and painted a ukelele."
+categories: ["Fabrication"]
+tags: ["Crafts"]
+thumbnail: '/images/ukelele.png'
 ---
-## Old Product vs New Upcycled Product
-An old, unused bracelet turned into a brand new necklace.
+## Spongebob-Themed Ukelele
+I created and learned how to play ukelele using the one that I made!
 <div class="photo-row">
   <figure>
-    <img src="/images/Necklaces/amber-bracelet.png" alt="Arduino">
-    <figcaption>Original bracelet</figcaption>
+    <img src="/images/ukelele-constructing.jpg" alt="In progress">
+    <figcaption>In progress</figcaption>
   </figure>
   <figure>
-    <img src="/images/Necklaces/amber-necklace.jpg" alt="Arduino box">
-    <figcaption>Finished product</figcaption>
+    <img src="/images/ukelele.png" alt="Ukelele minus strings">
+    <figcaption>Finished product minus strings</figcaption>
   </figure>
 </div>
 
