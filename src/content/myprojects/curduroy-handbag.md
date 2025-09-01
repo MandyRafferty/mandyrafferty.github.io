@@ -1,15 +1,14 @@
 ---
 title: "Upcycled Handbag"
-date: "2025-06-07"
-featured: true
-featured_order: 1
-project_num: 3
+date: "2025-01-14"
+featured: false
+project_num: 10
 type: "personal"
-description: "A wrist cast utilizing granular jamming properties."
+description: "A handbag upcycled from a curduroy shirt and thrifted fabric."
 excerpt: "A handbag upcycled from a curduroy shirt and thrifted fabric."
 categories: ["Sewing", "Upcycling"]
 tags: ["Sewing"]
-thumbnail: '/images/handbag-thumbnail.jpg'
+thumbnail: '/images/Handbag/handbag-thumbnail.jpg'
 ---
 ## Overview
 I've always wanted to upcycle a piece of clothing and sew it into a completely different product.

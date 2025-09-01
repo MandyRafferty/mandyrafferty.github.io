@@ -47,7 +47,7 @@ thumbnail: '/images/Granular Jamming Wrist Brace.jpg'
     <h2>Granular Jamming Proof of Concept</h2>
     <p>Testing coffee granules in a latex balloon - notice it gets stiff when a vacuum is applied!</p>
   </div>
-    <div align="center">
+    <div style="text-align: center;">
       <a href="/images/Jamming Brace/GranularJamming.gif">
         <img src="/images/Jamming Brace/GranularJamming.gif" alt="Proof of concept" class="w-full h-full object-cover rounded-lg shadow-md cursor-pointer hover:opacity-90 transition-opacity" />
       </a>
