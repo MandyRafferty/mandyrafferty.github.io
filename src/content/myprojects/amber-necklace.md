@@ -4,17 +4,18 @@ date: "2024-02-24"
 featured: false
 project_num: 15
 type: "personal"
-description: "Restyled beads from a bracelet into a necklace."
-excerpt: "Restyled beads from a bracelet into a necklace."
+description: "Transformed beads from a bracelet into a necklace."
+excerpt: "Transformed beads from a bracelet into a necklace."
 categories: ["Jewelry Making", "Upcycling"]
 tags: ["Necklace", "Crafts"]
 thumbnail: '/images/Necklaces/amber-necklace.jpg'
 ---
 ## Old Product vs New Upcycled Product
+An old, unused bracelet turned into a brand new necklace.
 <div class="photo-row">
   <figure>
     <img src="/images/Necklaces/amber-bracelet.png" alt="Arduino">
-    <figcaption>Bracelet used to make necklace</figcaption>
+    <figcaption>Original bracelet</figcaption>
   </figure>
   <figure>
     <img src="/images/Necklaces/amber-necklace.jpg" alt="Arduino box">

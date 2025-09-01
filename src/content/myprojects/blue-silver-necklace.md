@@ -11,12 +11,34 @@ tags: ["Crafts"]
 thumbnail: '/images/Necklaces/blue-necklace.jpg'
 ---
 ## Overview
-This necklace was made by creating double-wrapped loops from 26g stainless steel wire and acrylic beads. Each wire holding beads was created by hand.
+This necklace was made by creating double-wrapped loops from 26g stainless steel wire and acrylic beads. Each wire holding beads was created by hand using only pliers.
+
+<div class="photo-row" style="grid-template-columns: repeat(3, 1fr);">
+  <figure>
+    <img src="/images/Necklaces/IMG_0766.JPG" alt="Close-up">
+  </figure>
+  <figure>
+    <img src="/images/Necklaces/blue-necklace-closeup2.jpg" alt="Close-up">
+  </figure>
+  <figure>
+    <img src="/images/Necklaces/blue-necklace-overview.jpg" alt="Overview">
+  </figure>
+</div>
+
+## Close-Ups
+<div class="photo-row">
+  <figure>
+    <img src="/images/Necklaces/blue-necklace-closeup1.jpg" alt="Close-up">
+  </figure>
+  <figure>
+    <img src="/images/Necklaces/blue-necklace-side.jpg" alt="Overview">
+  </figure>
+</div>
 
 ## Final Product
 <div class="my-12 text-center">
   <a href="/images/Necklaces/blue-necklace.jpg" class="inline-block">
-    <img src="/images/Necklaces/blue-necklace.jpg" alt="Blue necklace" class="rounded-lg shadow-md cursor-pointer hover:opacity-90 transition-opacity" style="width: 60%; height: auto;" />
+    <img src="/images/Necklaces/blue-necklace.jpg" alt="Blue necklace" class="rounded-lg shadow-md cursor-pointer hover:opacity-90 transition-opacity" style="width: 50%; height: auto;" />
   </a>
 </div>
 
@@ -38,8 +60,8 @@ This necklace was made by creating double-wrapped loops from 26g stainless steel
 }
 
 .photo-row img {
-  width: 100%;
-  height: 500px;
+  width: 400px;
+  height: 100%;
   object-fit: cover;
   object-position: center;
   border-radius: 8px;
