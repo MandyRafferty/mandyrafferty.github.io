@@ -23,6 +23,7 @@ thumbnail: '/images/jewelryBoxThumbail.jpg'
       <li><p>Developed design concepts through sketching and ideation.</p></li>
       <li><p>Created a cardboard prototype to test design concepts.</p></li>
       <li><p>Developed a CAD model in SolidWorks to ensure pieces fit together and to create files for laser cutting.</p></li>
+      <li><p>Used an Epilog Fusion Pro laser cutter and 1/4" birch plywood for fabrication.</p></li>
       </ul>
     <h2>Result</h2>
      <ul>
