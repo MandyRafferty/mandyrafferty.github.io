@@ -11,7 +11,7 @@
   
   /* Accent Color */
   --color-accent-red: #dc2626;
-  --color-accent-purple: #772fad;
+  --color-accent-purple: #744fe2;
   
   /* Semantic Colors */
   --color-background: var(--color-white);
@@ -237,7 +237,6 @@ a:focus {
     margin: 0;
     padding: 0;
     display: block; /* Removes baseline spacing below images */
-    vertical-align: top; /* Additional safeguard against spacing */
   }
 
   .project-content {

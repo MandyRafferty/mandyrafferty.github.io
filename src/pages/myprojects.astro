@@ -94,6 +94,25 @@ const ewbSlug = ewbProject?.file.split('/').pop()?.replace(/\.(md|mdx)$/, '');
             <a href={`${base}myprojects/${ewbSlug}/`} class="btn btn-primary" style="align-self: center;">Learn More</a>
           </div>
         </div>
+
+<!-- Personal -->
+        <div class="project-card">
+          <div class="card-image">
+            <a href={`${base}personal-projects/`}>
+              <img src="/images/handbag-thumbnail.jpg" alt="Engineers Without Borders" />
+            </a>
+          </div>
+          <div class="card-content">
+            <a href={`${base}personal-projects/`}>
+              <h2>Personal Projects</h2>
+            </a>
+            <p>
+              Personal explorations in jewelry making, sewing, and handmade crafts that blend 
+              creativity with hands-on fabrication.
+            </p>
+            <a href={`${base}personal-projects/`} class="btn btn-primary" style="align-self: center;">Learn More</a>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -217,6 +236,7 @@ const ewbSlug = ewbProject?.file.split('/').pop()?.replace(/\.(md|mdx)$/, '');
     transition: transform 0.3s ease;
     margin: 0;
     border: none;
+    border-radius: 8px;
   }
 
   .project-card:hover .card-image img {
