@@ -2,7 +2,7 @@
 title: "Beach Photo Engraved"
 date: "2025-06-12"
 featured: false
-project_num: 6
+project_num: 11
 type: "personal"
 description: "Portable, handheld device that allows surgeons to measure bone density of patients cost effectively."
 excerpt: "Turned a childhood photo into an engineered Father's Day gift."
@@ -10,21 +10,19 @@ categories: ["Laser Engraving", "Inkscape"]
 tags: ["Inkscape"]
 thumbnail: '/images/Beach Engraved/bitmap_IMG_3254.jpeg'
 ---
-
-<div class="grid grid-cols-1 lg:grid-cols-3 gap-8 my-12">
-  <div class="lg:col-span-2 prose prose-lg max-w-none">
-  </div>
-    <div style="text-align: center;">
-      <a href="/images/Beach Engraved/bitmap-inkscape.gif">
-        <img src="/images/Beach Engraved/bitmap-inkscape.gif" alt="Inkscape process" class="w-full h-full object-cover rounded-lg shadow-md cursor-pointer hover:opacity-90 transition-opacity" />
-      </a>
-    </div>
-</div>
-
-<div class="my-12 text-center">
-  <a href="/images/Beach Engraved/bitmap-inkscape.gif" class="inline-block">
-    <img src="/images/Beach Engraved/bitmap-inkscape.gif" alt="Blue necklace" class="rounded-lg shadow-md cursor-pointer hover:opacity-90 transition-opacity" style="width: 60%; height: auto;" />
-  </a>
+## Inkscape
+Turning the original photo into a bitmap for engraving using Inkscape.
+<div style="display: flex; justify-content: center; margin: 3rem 0;">
+  <video 
+    src="/videos/bitmap-inkscape.mp4" 
+    muted
+    loop
+    autoplay
+    style="width: 70%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);"
+    class="rounded-lg shadow-md"
+  >
+    Your browser does not support the video tag.
+  </video>
 </div>
 
 ## Photo Transformation
@@ -35,11 +33,11 @@ thumbnail: '/images/Beach Engraved/bitmap_IMG_3254.jpeg'
   </figure>
   <figure>
     <img src="/images/Beach Engraved/IMG_3254.jpeg" alt="B&W photo">
-    <figcaption>Original photo in black and white</figcaption>
+    <figcaption>Black and white photo</figcaption>
   </figure>
   <figure>
     <img src="/images/Beach Engraved/bitmap_IMG_3254.jpeg" alt="Bitmap">
-    <figcaption>Bitmap of photo</figcaption>
+    <figcaption>Bitmap</figcaption>
   </figure>
 </div>
 
@@ -101,3 +99,10 @@ Product was engraved and cut with an Epilog Fusion Pro laser cutter using 1/4" b
   }
 }
 </style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const video = document.getElementById('my-video');
+    video.playbackRate = 0.5; // 0.5 = half speed, 2.0 = double speed, 1.0 = normal
+  });
+</script>

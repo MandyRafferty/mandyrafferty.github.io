@@ -2,7 +2,7 @@
 title: "Tote Bag from Thrifted Fabric"
 date: "2022-10-02"
 featured: false
-project_num: 14
+project_num: 17
 type: "personal"
 description: "Simple tote bag created from thrifted fabric."
 excerpt: "Details coming soon..."
