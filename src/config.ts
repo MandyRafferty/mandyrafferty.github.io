@@ -28,7 +28,7 @@ export const config: SiteConfig = {
     // github: "https://github.com/yourusername",
     // twitter: "https://twitter.com/yourusername",
     linkedin: "https://linkedin.com/in/mandyrafferty",
-    email: "mraffert@andrew.cmu.com"
+    email: "mraffert@andrew.cmu.edu"
   },
   siteUrl: "http://mandyrafferty.github.io/"
 };
