@@ -62,7 +62,7 @@ Here, this projects transforms a shirt into a bag with an adjustable strap!
       <div class="caption">Hand sewing invisible stitches to close the inside of the bag</div>
     </div>
     <div class="slide">
-      <img src="/images/handbag-thumbnail.jpg" alt="Image 10">
+      <img src="/images/Handbag/handbag-thumbnail.jpg" alt="Image 10">
       <div class="caption">Sewing on strap</div>
     </div>
     <div class="slide">
@@ -86,7 +86,7 @@ Here, this projects transforms a shirt into a bag with an adjustable strap!
     <img src="/images/Handbag/handbag-connecting.jpg" alt="Image 7" onclick="currentSlide(7)" class="thumbnail">
     <img src="/images/Handbag/handbag-main.jpg" alt="Image 8" onclick="currentSlide(8)" class="thumbnail">
     <img src="/images/Handbag/handbag-finalstitch.jpg" alt="Image 9" onclick="currentSlide(9)" class="thumbnail">
-    <img src="/images/handbag-thumbnail.jpg" alt="Image 10" onclick="currentSlide(10)" class="thumbnail">
+    <img src="/images/Handbag/handbag-thumbnail.jpg" alt="Image 10" onclick="currentSlide(10)" class="thumbnail">
     <img src="/images/Handbag/handbag-complete.jpg" alt="Image 11" onclick="currentSlide(11)" class="thumbnail">
   </div>
 </div>
