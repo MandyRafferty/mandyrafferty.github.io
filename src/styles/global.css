@@ -236,6 +236,9 @@ a:focus {
     margin: 0;
     padding: 0;
     display: block; /* Remove any inline spacing */
+    border: none;
+    border-radius: 8px 8px 0 0;
+    border-bottom: 1px solid var(--color-border);
   }
 
   .project-thumbnail img {
@@ -245,6 +248,8 @@ a:focus {
     margin: 0;
     padding: 0;
     display: block; /* Removes baseline spacing below images */
+    border-radius: 8px 8px 0 0;
+    border: none;
   }
 
   .project-content {
