@@ -7,7 +7,7 @@ project_num: 3
 type: "engineering"
 description: "A wrist cast utilizing granular jamming properties."
 excerpt: "Wrist brace that integrates granular jamming to achieve a custom fit in its soft state while providing stabilizing in its rigid state."
-categories: ["Design", "Soft Robotics", "Prototyping"]
+categories: ["Product Design", "Soft Robotics", "Prototyping"]
 tags: ["Soft Robotics", "Granular Jamming", "Product Design", "Fabrication"]
 thumbnail: '/images/Granular Jamming Wrist Brace.jpg'
 ---

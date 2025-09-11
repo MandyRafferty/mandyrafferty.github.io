@@ -8,7 +8,7 @@ description: "Constructed and painted a ukelele."
 excerpt: "Constructed and painted a ukelele."
 categories: ["Fabrication"]
 tags: ["Crafts"]
-thumbnail: '/images/ukelele.png'
+thumbnail: '/images/ukelele-painted.jpg'
 ---
 ## Spongebob-Themed Ukelele
 I created and learned how to play ukelele using the one that I made!
@@ -18,7 +18,7 @@ I created and learned how to play ukelele using the one that I made!
     <figcaption>In progress</figcaption>
   </figure>
   <figure>
-    <img src="/images/ukelele.png" alt="Ukelele minus strings">
+    <img src="/images/ukelele-painted.jpg" alt="Ukelele minus strings">
     <figcaption>Finished product minus strings</figcaption>
   </figure>
 </div>

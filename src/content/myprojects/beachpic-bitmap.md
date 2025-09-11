@@ -8,7 +8,7 @@ description: "Portable, handheld device that allows surgeons to measure bone den
 excerpt: "Turned a childhood photo into an engineered Father's Day gift."
 categories: ["Laser Engraving", "Inkscape"]
 tags: ["Inkscape"]
-thumbnail: '/images/Beach Engraved/bitmap_IMG_3254.jpeg'
+thumbnail: '/images/Beach Engraved/final-engraving-thumbnail.jpg'
 ---
 ## Inkscape
 Turning the original photo into a bitmap for engraving using Inkscape.

@@ -224,6 +224,26 @@ const ewbSlug = ewbProject?.file.split('/').pop()?.replace(/\.(md|mdx)$/, '');
     margin-bottom: 0;
   }
 
+  .project-card a:not(.btn) {
+    text-decoration: none !important;
+    color: var(--color-text-primary) !important;
+    transition: color 0.2s ease;
+  }
+
+  .project-card a:not(.btn):hover,
+  .project-card a:not(.btn):focus {
+    color: var(--color-accent) !important;
+  }
+
+  .project-card h2 {
+    color: var(--color-text-primary) !important;
+    transition: color 0.2s ease;
+  }
+
+  .project-card a:not(.btn):hover h2 {
+    color: var(--color-accent) !important;
+  }
+
   .card-image {
     overflow: hidden;
     border-radius: 8px;
@@ -253,6 +273,20 @@ const ewbSlug = ewbProject?.file.split('/').pop()?.replace(/\.(md|mdx)$/, '');
     margin: 0;
   }
 
+  /* Project title links only */
+  .card-content h2 a {
+    color: var(--color-text-primary);
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+
+  .card-content h2 a:hover,
+  .card-content h2 a:focus {
+    color: var(--color-accent);
+    text-decoration: none;
+  }
+
+  /* Paragraph spacing reset */
   .card-content p {
     margin: 0;
   }
