@@ -23,6 +23,9 @@ const engineeringProjects = sortedProjects.filter(project =>
 const diyProjects = sortedProjects.filter(project => 
   project.frontmatter.category === 'diy'
 );
+const jewelryProjects = sortedProjects.filter(project => 
+  project.frontmatter.category === 'jewelry'
+);
 
 const ewbProject = allProjects.find(project => 
   project.file.includes('ewb-kenya.md')
@@ -92,6 +95,25 @@ const ewbSlug = ewbProject?.file.split('/').pop()?.replace(/\.(md|mdx)$/, '');
               which focused on increasing clean water accessibility for a community in Kolunje, Kenya.
             </p>
             <a href={`${base}myprojects/${ewbSlug}/`} class="btn btn-primary" style="align-self: center;">Learn More</a>
+          </div>
+        </div>
+
+      <!-- Jewelry Making -->
+        <div class="project-card">
+          <div class="card-image">
+            <a href={`${base}jewelry-making/`}>
+              <img src="/images/Brass Butterfly/butterfly_final.jpg" alt="Jewelry" />
+            </a>
+          </div>
+          <div class="card-content">
+            <a href={`${base}jewelry-making/`}>
+              <h2>Jewelry Making</h2>
+            </a>
+            <p>
+              TechSpark class at Carnegie Mellon University that focuses on using
+              various techniques and materials to create unique jewelry pieces.
+            </p>
+            <a href={`${base}jewelry-making/`} class="btn btn-primary" style="align-self: center;">Learn More</a>
           </div>
         </div>
 
