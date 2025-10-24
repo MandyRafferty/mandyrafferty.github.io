@@ -43,7 +43,7 @@ thumbnail: '/images/Brass Butterfly/butterfly_final.jpg'
 </div>
 
 ## Final Product
-Product was texturized using a ball peen hammer and dapping set, then given slight bends using flat nose pliers.
+Product was texturized using a ball peen hammer and dapping set. Slight bends were created using flat nose and round nose pliers.
 <div class="my-12 text-center">
   <a href="/images/Brass Butterfly/butterfly_final.jpg" class="inline-block">
     <img src="/images/Brass Butterfly/butterfly_final.jpg" alt="Final product" class="rounded-lg shadow-md cursor-pointer hover:opacity-90 transition-opacity" style="width: 30%; height: auto;" />
