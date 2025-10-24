@@ -19,7 +19,7 @@ thumbnail: '/images/Brass Butterfly/butterfly_final.jpg'
   </figure>
   <figure>
     <img src="/images/Brass Butterfly/butterfly2_tools.jpg" alt="Tools used">
-    <figcaption>Tools used</figcaption>
+    <figcaption>Tools: scribe, saw, ruler, sheet metal</figcaption>
   </figure>
   <figure>
     <img src="/images/Brass Butterfly/butterfly3_scribe.jpg" alt="Scribed outline">
