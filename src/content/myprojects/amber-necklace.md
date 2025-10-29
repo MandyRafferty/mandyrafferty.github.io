@@ -2,7 +2,7 @@
 title: "Amber Necklace"
 date: "2024-02-24"
 featured: false
-project_num: 32
+project_num: 45
 type: "personal"
 description: "Transformed beads from a bracelet into a necklace."
 excerpt: "Transformed beads from a bracelet into a necklace."

@@ -2,7 +2,7 @@
 title: "Tote Bag from Thrifted Fabric"
 date: "2022-10-02"
 featured: false
-project_num: 28
+project_num: 40
 type: "personal"
 description: "Simple tote bag created from thrifted fabric, made for a friend's birthday gift."
 excerpt: "Simple tote bag created from thrifted fabric, made for a friend's birthday gift."

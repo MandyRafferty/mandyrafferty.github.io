@@ -2,7 +2,7 @@
 title: "Ukelele"
 date: "2019-11-13"
 featured: false
-project_num: 27
+project_num: 39
 type: "personal"
 description: "Constructed and painted a ukelele."
 excerpt: "Constructed and painted a ukelele."

@@ -2,7 +2,7 @@
 title: "Wire Wrapped Blue Necklace"
 date: "2024-03-17"
 featured: false
-project_num: 33
+project_num: 46
 type: "personal"
 description: "Stainless steel 26g wire wrapped beaded necklace."
 excerpt: "Stainless steel 26g wire wrapped beaded necklace."
