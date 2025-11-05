@@ -6,7 +6,7 @@ project_num: 21
 type: "jewelry making"
 description: "Cold forged nickel strawberry pin made."
 excerpt: "Cold forged and soldered nickel to make a simple strawberry pin."
-categories: ["Metalworking", "Cold forging"]
+categories: ["Metalworking", "Cold forging", "Soldering"]
 tags: ["Metalworking"]
 thumbnail: '/images/Strawberry Pin/9-seeds.jpg'
 ---

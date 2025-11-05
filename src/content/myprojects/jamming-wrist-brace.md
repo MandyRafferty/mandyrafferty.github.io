@@ -6,7 +6,7 @@ featured_order: 1
 project_num: 3
 type: "engineering"
 description: "A wrist cast utilizing granular jamming properties."
-excerpt: "Wrist brace that integrates granular jamming to achieve a custom fit in its soft state while providing stabilizing in its rigid state."
+excerpt: "Wrist brace that integrates granular jamming to achieve a custom fit in its soft state while providing stabilizion in its rigid state."
 categories: ["Product Design", "Soft Robotics", "Prototyping"]
 tags: ["Soft Robotics", "Granular Jamming", "Product Design", "Fabrication"]
 thumbnail: '/images/Granular Jamming Wrist Brace.jpg'
@@ -122,6 +122,21 @@ thumbnail: '/images/Granular Jamming Wrist Brace.jpg'
   </div>
 </div>
 
+## Test Results
+Testing revealed that in the soft state, the jamming layer represented flexible polymer foams at a higher density. In the rigid state, it was within the same range as cork or rigid polymer foams.
+<div class="single-photo">
+  <figure>
+    <img src="/images/Jamming Brace/brace-material-classification.png" alt="Jamming wrist brace final product">
+  </figure>
+</div>
+
+## Final Product
+<div class="single-photo">
+  <figure>
+    <img src="/images/Jamming Brace/granjam-finalbrace.png" alt="Jamming wrist brace final product" style="width: 700px;">
+  </figure>
+</div>
+
 <style>
 .slideshow {
   position: relative;
@@ -227,6 +242,55 @@ thumbnail: '/images/Granular Jamming Wrist Brace.jpg'
   .slideshow {
     max-width: 100%;
     margin: 0 10px;
+  }
+}
+
+.single-photo {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center;     /* Center vertically (if needed) */
+  margin: 2rem 0;
+  width: 100%; /* Ensure full width */
+  text-align: center; /* Optional: centers the caption if there is one */
+}
+
+/* Figure setup */
+.single-photo figure {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centers content vertically */
+  align-items: center;     /* Centers content horizontally */
+  gap: 4px; /* Adjust the gap between image and caption */
+}
+
+/* Image styling */
+.single-photo img {
+  width: 450px; /* Set image width */
+  height: auto; /* Let the height adjust automatically based on width */
+  object-fit: cover;
+  object-position: center;
+  border-radius: 8px;
+  margin: 0 !important;
+  margin-bottom: 0 !important; /* Remove any extra bottom margin */
+}
+
+/* Figcaption styling */
+.single-photo figure figcaption {
+  font-style: italic;
+  font-size: 0.9rem;
+  color: var(--color-text-muted);
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* Responsive behavior: adjust image size on smaller screens */
+@media (max-width: 768px) {
+  .single-photo img {
+    width: 100%; /* Make the image full width on smaller screens */
+    max-width: 500px; /* Optional: limit the maximum width */
+    height: auto;
   }
 }
 </style>
