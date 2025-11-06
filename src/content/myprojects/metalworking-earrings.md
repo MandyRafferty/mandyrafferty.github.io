@@ -345,9 +345,10 @@ View the inspo photo below or click <a href="https://www.kristinchristopher.com/
   }
   
   .photo-row img {
-    width: 100%
+    width: 100%;
     height: auto;
     object-fit: contain;
+    display: block;
   }
 }
 </style>
