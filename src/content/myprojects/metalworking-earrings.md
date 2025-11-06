@@ -1,18 +1,27 @@
 ---
-title: "Metal Earrings"
+title: "Copper Patina Earrings"
 date: "2025-11-05"
 featured: false
 project_num: 22
 type: "jewelry making"
-description: "Crafted earrings from bronze and nickel sheet metal using various metalworking techniques."
+description: "Crafted earrings from scratch using bronze and nickel sheet metal using various metalworking techniques."
 excerpt: "Crafted earrings from bronze and nickel sheet metal using various metalworking techniques."
 categories: ["Metalworking", "Cold forging"]
 tags: ["Metalworking"]
-thumbnail: '/images/Metal Earrings/IMG_5958.jpg'
+thumbnail: '/images/Metal Earrings/earrings-closeup.jpg'
 ---
 
 ## Fabrication Process
-I started with two pieces of scrap metal, including bronze and nickel. Once I cut and filed the pieces I needed, I applied texture onto them and then polished them. For the final assembly I put it all together using ear wire and my self-made 18 gauge jump rings. 
+#### Summary:
+- Started with two pieces of scrap metal: bronze and nickel
+- Outlined design with a scribe, then cut and filed pieces to desired shapes and sizes
+- Applied light texture onto nickel pieces using a ball peen hammer
+- Texturized bronze pieces with texturing and forging hammer
+- Annealed and pickled all pieces
+- Crafted my own jump rings using a 18 gauge wire, hand drill, mandrel, and jeweler's saw
+- Polished nickel using a foredom
+- Created a blue patina on the copper pieces using salt water and ammonia
+- Assembled all pieces together using ear wire, jump rings, metal pieces, and pliers
 
 <div class="slideshow">
   <div class="slides">
@@ -87,7 +96,30 @@ I started with two pieces of scrap metal, including bronze and nickel. Once I cu
     </div>
     <div class="slide">
       <img src="/images/Metal Earrings/20-polished.jpg" alt="Image 20">
-      <div class="caption">Polished nickel pieces</div>
+      <div class="caption">Polish nickel pieces</div>
+    </div>
+    <div class="slide">
+      <img src="/images/Metal Earrings/21-ammonia2.jpg" alt="Image 21">
+      <div class="caption">Progress on oxidization with ammonia</div>
+    </div>
+    <div class="slide">
+      <img src="/images/Metal Earrings/22-patina_wet.jpg" alt="Image 22">
+      <div class="caption">Patina immediately after removing from ammonia jar</div>
+    </div>
+    <div class="slide">
+      <img src="/images/Metal Earrings/23-patina_dry.jpg" alt="Image 23">
+      <div class="caption">Patina after drying</div>
+    </div>
+    <div class="slide">
+      <img src="/images/Metal Earrings/24-assembly.jpg" alt="Image 24">
+    </div>
+    <div class="slide">
+      <img src="/images/Metal Earrings/25-assembly2.jpg" alt="Image 25">
+      <div class="caption">Assembling</div>
+    </div>
+    <div class="slide">
+      <img src="/images/Metal Earrings/26-complete.jpg" alt="Image 26">
+      <div class="caption">Finished</div>
     </div>
   </div>
 
@@ -116,11 +148,37 @@ I started with two pieces of scrap metal, including bronze and nickel. Once I cu
     <img src="/images/Metal Earrings/18-radialbristle.jpg" alt="Image 18" onclick="currentSlide(17)" class="thumbnail">
     <img src="/images/Metal Earrings/19-abrasives.jpg" alt="Image 19" onclick="currentSlide(18)" class="thumbnail">
     <img src="/images/Metal Earrings/20-polished.jpg" alt="Image 20" onclick="currentSlide(19)" class="thumbnail">
+    <img src="/images/Metal Earrings/21-ammonia2.jpg" alt="Image 21" onclick="currentSlide(20)" class="thumbnail">
+    <img src="/images/Metal Earrings/22-patina_wet.jpg" alt="Image 22" onclick="currentSlide(21)" class="thumbnail">
+    <img src="/images/Metal Earrings/23-patina_dry.jpg" alt="Image 23" onclick="currentSlide(22)" class="thumbnail">
+    <img src="/images/Metal Earrings/24-assembly.jpg" alt="Image 24" onclick="currentSlide(23)" class="thumbnail">
+    <img src="/images/Metal Earrings/25-assembly2.jpg" alt="Image 25" onclick="currentSlide(24)" class="thumbnail">
+    <img src="/images/Metal Earrings/26-complete.jpg" alt="Image 26" onclick="currentSlide(25)" class="thumbnail">
   </div>
 </div>
 
+## Inspiration
+View the inspo photo below or click <a href="https://www.kristinchristopher.com/blogs/news/cleaning-carrying-copper-patinaed" target="_blank">here</a>
+
+
+<div class="photo-row" style="display: flex; justify-content: center;">
+  <figure style="align-items: center;">
+    <img src="/images/Metal Earrings/blue-patina-earrings.png" alt="Earrings inspiration">
+  </figure>
+</div>
+
 ## Final Product
-In progress...stay tuned!
+<div class="photo-row">
+  <figure>
+    <img src="/images/Metal Earrings/earrings-closeup.jpg" alt="Earrings closeup">
+  </figure>
+  <figure>
+    <img src="/images/Metal Earrings/earrings-final.jpg" alt="Earrings final">
+  </figure>
+  <figure>
+    <img src="/images/Metal Earrings/earrings-details.jpg" alt="Earrings details">
+  </figure>
+</div>
 
 <style>
 .slideshow {
@@ -244,7 +302,7 @@ In progress...stay tuned!
 
 .photo-row {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 20px;
   align-items: start;
   margin: 2rem 0;
