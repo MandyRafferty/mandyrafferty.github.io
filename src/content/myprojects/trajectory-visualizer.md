@@ -14,7 +14,7 @@ thumbnail: '/images/costMapVisualizer.png'
   <div style="font-size: 1.0rem; line-height: 1.0;">
     <h2>Aim</h2>
      <ul>
-      <li><p>Work collaboratively in a team with four other people to create individual C++ source files to generate a user facing graphic interface that could plot the movements of a single point robot.</p></li>
+      <li><p>Work collaboratively in a team with four other people to create individual C++ source files to generate a user facing graphic interface using OpenGL that could plot the movements of a single point robot.</p></li>
       <li><p>This can be applied across multiple robotic systems and aid researchers with simple trajectory visualization.</p></li>
       </ul>
     <h2>Approach</h2>

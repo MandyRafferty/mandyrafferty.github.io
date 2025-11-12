@@ -4,8 +4,8 @@ date: "2025-11-11"
 featured: false
 project_num: 23
 type: "jewelry making"
-description: "Bezel pendant forged by hand to custom fit a cabochon."
-excerpt: "Bezel pendant forged by hand to custom fit a cabochon."
+description: "Brass bezel pendant forged by hand to custom fit a cabochon."
+excerpt: "Brass bezel pendant forged by hand to custom fit a cabochon."
 categories: ["Metalworking", "Cold forging", "Soldering"]
 tags: ["Metalworking"]
 thumbnail: '/images/Bezel Pendant/final-1.jpg'
@@ -71,6 +71,7 @@ thumbnail: '/images/Bezel Pendant/final-1.jpg'
     </div>
     <div class="slide">
       <img src="/images/Bezel Pendant/14-solder.jpg" alt="Image 14">
+      <div class="caption">Solder bail onto backplate</div>
     </div>
     <div class="slide">
       <img src="/images/Bezel Pendant/15-fit.jpg" alt="Image 15">
