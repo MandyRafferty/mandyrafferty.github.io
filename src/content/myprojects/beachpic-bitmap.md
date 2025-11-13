@@ -12,17 +12,10 @@ thumbnail: '/images/Beach Engraved/final-engraving-thumbnail.jpg'
 ---
 ## Inkscape
 Turning the original photo into a bitmap for engraving using Inkscape.
-<div style="display: flex; justify-content: center; margin: 3rem 0;">
-  <video 
-    src="/videos/bitmap-inkscape.mp4" 
-    muted
-    loop
-    autoplay
-    style="width: 70%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);"
-    class="rounded-lg shadow-md"
-  >
-    Your browser does not support the video tag.
-  </video>
+<div class="my-12 text-center">
+  <a href="/images/Beach Engraved/bitmap-inkscape.gif" class="inline-block">
+    <img src="/images/Beach Engraved/bitmap-inkscape.gif" alt="Final product" class="rounded-lg shadow-md cursor-pointer hover:opacity-90 transition-opacity" style="width: 30%; height: auto;" />
+  </a>
 </div>
 
 ## Photo Transformation
@@ -44,8 +37,8 @@ Turning the original photo into a bitmap for engraving using Inkscape.
 ## Final Product
 Product was engraved and cut with an Epilog Fusion Pro laser cutter using 1/4" birch plywood.
 <div class="my-12 text-center">
-  <a href="/images/Beach Engraved/bitmap-inkscape.gif" class="inline-block">
-    <img src="/images/Beach Engraved/bitmap-inkscape.gif" alt="Final product" class="rounded-lg shadow-md cursor-pointer hover:opacity-90 transition-opacity" style="width: 30%; height: auto;" />
+  <a href="/images/Beach Engraved/final-engraving.jpg" class="inline-block">
+    <img src="/images/Beach Engraved/final-engraving.jpg" alt="Final product" class="rounded-lg shadow-md cursor-pointer hover:opacity-90 transition-opacity" style="width: 50%; height: auto;" />
   </a>
 </div>
 
