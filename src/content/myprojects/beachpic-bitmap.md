@@ -44,8 +44,8 @@ Turning the original photo into a bitmap for engraving using Inkscape.
 ## Final Product
 Product was engraved and cut with an Epilog Fusion Pro laser cutter using 1/4" birch plywood.
 <div class="my-12 text-center">
-  <a href="/images/Beach Engraved/final-engraving.jpg" class="inline-block">
-    <img src="/images/Beach Engraved/final-engraving.jpg" alt="Final product" class="rounded-lg shadow-md cursor-pointer hover:opacity-90 transition-opacity" style="width: 30%; height: auto;" />
+  <a href="/images/Beach Engraved/bitmap-inkscape.gif" class="inline-block">
+    <img src="/images/Beach Engraved/bitmap-inkscape.gif" alt="Final product" class="rounded-lg shadow-md cursor-pointer hover:opacity-90 transition-opacity" style="width: 30%; height: auto;" />
   </a>
 </div>
 

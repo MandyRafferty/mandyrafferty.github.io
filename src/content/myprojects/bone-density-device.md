@@ -58,20 +58,15 @@ thumbnail: '/images/Bone Density Device/BoneDensityDevice.jpg'
   </figure>
 </div>
 
-## Product Demo Video
+## Product Demo
 Prototype is being tested on a Bone Density Modeling block in combination with our MATLAB GUI.
-<div class="grid grid-cols-1 lg:grid-cols-3 gap-8 my-12" align="center">
-  <div>
-    <video 
-      src="/videos/bonedensity-demo-video.mp4" 
-      controls
-      muted
-      style="width: 70%; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);"
-      class="rounded-lg shadow-md"
-    >
-      Your browser does not support the video tag.
-    </video>
-  </div>
+
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-8 my-12">
+    <div style="text-align: center;">
+      <a href="/images/Bone Density Device/bonedensity-demo-gif.gif">
+        <img src="/images/Bone Density Device/bonedensity-demo-gif.gif" alt="Proof of concept" class="w-full h-full object-cover rounded-lg shadow-md cursor-pointer hover:opacity-90 transition-opacity" />
+      </a>
+    </div>
 </div>
 
 <style>

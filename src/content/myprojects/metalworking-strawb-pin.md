@@ -28,49 +28,35 @@ This simple projects includes sawing, forming, annealing, pickling, and solderin
       <img src="/images/Strawberry Pin/3-cut.jpg" alt="Image 3">
     </div>
     <div class="slide">
-      <img src="/images/Strawberry Pin/4-trace.jpg" alt="Image 4">
+      <img src="/images/Strawberry Pin/5-scribeshape.jpg" alt="Image 4">
       <div class="caption">Trace shape of strawberry with scribe</div>
     </div>
     <div class="slide">
-      <img src="/images/Strawberry Pin/5-scribeshape.jpg" alt="Image 5">
+      <img src="/images/Strawberry Pin/7-file.jpg" alt="Image 5">
+      <div class="caption">Saw then file to smooth edges and refine shape</div>
     </div>
     <div class="slide">
-      <img src="/images/Strawberry Pin/6-saw.jpg" alt="Image 6">
-      <div class="caption">Saw to cut shape</div>
-    </div>
-    <div class="slide">
-      <img src="/images/Strawberry Pin/7-file.jpg" alt="Image 7">
-      <div class="caption">File to smooth edges and refine shape</div>
-    </div>
-    <div class="slide">
-      <img src="/images/Strawberry Pin/8-dappingset.jpg" alt="Image 8">
+      <img src="/images/Strawberry Pin/8-dappingset.jpg" alt="Image 6">
       <div class="caption">Dapping set</div>
     </div>
     <div class="slide">
-      <img src="/images/Strawberry Pin/9-seeds.jpg" alt="Image 9">
+      <img src="/images/Strawberry Pin/9-seeds.jpg" alt="Image 7">
       <div class="caption">Use forging hammer and dapping set to imprint seeds</div>
     </div>
     <div class="slide">
-      <img src="/images/Strawberry Pin/10-torch_setup.jpg" alt="Image 10">
-    </div>
-    <div class="slide">
-      <img src="/images/Strawberry Pin/11-annealing.jpg" alt="Image 11">
+      <img src="/images/Strawberry Pin/11-annealing.jpg" alt="Image 8">
       <div class="caption">Setup for annealing</div>
     </div>
     <div class="slide">
-      <img src="/images/Strawberry Pin/12-anneal_complete.jpg" alt="Image 12">
+      <img src="/images/Strawberry Pin/12-anneal_complete.jpg" alt="Image 9">
       <div class="caption">Strawberry annealed</div>
     </div>
     <div class="slide">
-      <img src="/images/Strawberry Pin/13-side.jpg" alt="Image 13">
+      <img src="/images/Strawberry Pin/14-soldered.jpg" alt="Image 10">
       <div class="caption">Pickled annealed piece then soldered pin piece to back</div>
     </div>
     <div class="slide">
-      <img src="/images/Strawberry Pin/14-soldered.jpg" alt="Image 14">
-      <div class="caption">Back of pin</div>
-    </div>
-    <div class="slide">
-      <img src="/images/Strawberry Pin/15-final.jpg" alt="Image 15">
+      <img src="/images/Strawberry Pin/15-final.jpg" alt="Image 11">
       <div class="caption">Final product</div>
     </div>
   </div>
@@ -83,18 +69,14 @@ This simple projects includes sawing, forming, annealing, pickling, and solderin
     <img src="/images/Strawberry Pin/1-materials.jpg" alt="Thumbnail 1" onclick="currentSlide(0)" class="thumbnail active">
     <img src="/images/Strawberry Pin/2-square.jpg" alt="Thumbnail 2" onclick="currentSlide(1)" class="thumbnail">
     <img src="/images/Strawberry Pin/3-cut.jpg" alt="Thumbnail 3" onclick="currentSlide(2)" class="thumbnail">
-    <img src="/images/Strawberry Pin/4-trace.jpg" alt="Image 4" onclick="currentSlide(3)" class="thumbnail">
-    <img src="/images/Strawberry Pin/5-scribeshape.jpg" alt="Image 5" onclick="currentSlide(4)" class="thumbnail">
-    <img src="/images/Strawberry Pin/6-saw.jpg" alt="Image 6" onclick="currentSlide(5)" class="thumbnail">
-    <img src="/images/Strawberry Pin/7-file.jpg" alt="Image 7" onclick="currentSlide(6)" class="thumbnail">
-    <img src="/images/Strawberry Pin/8-dappingset.jpg" alt="Image 8" onclick="currentSlide(7)" class="thumbnail">
-    <img src="/images/Strawberry Pin/9-seeds.jpg" alt="Image 9" onclick="currentSlide(8)" class="thumbnail">
-    <img src="/images/Strawberry Pin/10-torch_setup.jpg" alt="Image 10" onclick="currentSlide(9)" class="thumbnail">
-    <img src="/images/Strawberry Pin/11-annealing.jpg" alt="Image 11" onclick="currentSlide(10)" class="thumbnail">
-    <img src="/images/Strawberry Pin/12-anneal_complete.jpg" alt="Image 12" onclick="currentSlide(11)" class="thumbnail">
-    <img src="/images/Strawberry Pin/13-side.jpg" alt="Image 13" onclick="currentSlide(12)" class="thumbnail">
-    <img src="/images/Strawberry Pin/14-soldered.jpg" alt="Image 14" onclick="currentSlide(13)" class="thumbnail">
-    <img src="/images/Strawberry Pin/15-final.jpg" alt="Image 15" onclick="currentSlide(14)" class="thumbnail">
+    <img src="/images/Strawberry Pin/5-scribeshape.jpg" alt="Image 4" onclick="currentSlide(3)" class="thumbnail">
+    <img src="/images/Strawberry Pin/7-file.jpg" alt="Image 5" onclick="currentSlide(4)" class="thumbnail">
+    <img src="/images/Strawberry Pin/8-dappingset.jpg" alt="Image 6" onclick="currentSlide(5)" class="thumbnail">
+    <img src="/images/Strawberry Pin/9-seeds.jpg" alt="Image 7" onclick="currentSlide(6)" class="thumbnail">
+    <img src="/images/Strawberry Pin/11-annealing.jpg" alt="Image 8" onclick="currentSlide(7)" class="thumbnail">
+    <img src="/images/Strawberry Pin/12-anneal_complete.jpg" alt="Image 9" onclick="currentSlide(8)" class="thumbnail">
+    <img src="/images/Strawberry Pin/14-soldered.jpg" alt="Image 10" onclick="currentSlide(9)" class="thumbnail">
+    <img src="/images/Strawberry Pin/15-final.jpg" alt="Image 11" onclick="currentSlide(10)" class="thumbnail">
   </div>
 </div>
 
