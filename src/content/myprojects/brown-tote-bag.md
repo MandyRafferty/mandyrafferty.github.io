@@ -37,33 +37,19 @@ Checkout the fabrication process for my first big sewing project!
       <div class="caption">Pocket for the inside</div>
     </div>
     <div class="slide">
-    <video controls>
-        <source src="/videos/video-inside.mp4" type="video/mp4">
-        <source src="/videos/video-inside.mp4" type="video/webm">
-        Your browser does not support the video tag.
-    </video>
-    </div>
-    <div class="slide">
-      <img src="/images/Brown Tote/straps.jpg" alt="Image 5">
+      <img src="/images/Brown Tote/straps.jpg" alt="Image 4">
       <div class="caption">Remade straps to be longer</div>
     </div>
     <div class="slide">
-      <img src="/images/Brown Tote/tote-sewn.jpg" alt="Image 6">
+      <img src="/images/Brown Tote/tote-sewn.jpg" alt="Image 5">
       <div class="caption">Almost done, just need to box corners</div>
     </div>
     <div class="slide">
-      <img src="/images/Brown Tote/brown-tote-final.jpg" alt="Image 7">
+      <img src="/images/Brown Tote/brown-tote-final.jpg" alt="Image 6">
       <div class="caption">Inside of bag</div>
     </div>
     <div class="slide">
-    <video controls>
-        <source src="/videos/tote-completed-video.mp4" type="video/mp4">
-        <source src="/videos/tote-completed-video.mp4" type="video/webm">
-        Your browser does not support the video tag.
-    </video>
-    </div>
-    <div class="slide">
-      <img src="/images/Brown Tote/brown-tote-thumbnail.jpg" alt="Image 9">
+      <img src="/images/Brown Tote/brown-tote-thumbnail.jpg" alt="Image 7">
       <div class="caption">Final product</div>
     </div>
   </div>
@@ -76,12 +62,10 @@ Checkout the fabrication process for my first big sewing project!
     <img src="/images/Brown Tote/fabric.jpg" alt="Thumbnail 1" onclick="currentSlide(0)" class="thumbnail active">
     <img src="/images/Brown Tote/cut-fabric.jpg" alt="Thumbnail 2" onclick="currentSlide(1)" class="thumbnail">
     <img src="/images/Brown Tote/pocket.jpg" alt="Thumbnail 3" onclick="currentSlide(2)" class="thumbnail">
-    <img src="/images/Brown Tote/video-inside-thumbnail.png" alt="Image 4" onclick="currentSlide(3)" class="thumbnail">
-    <img src="/images/Brown Tote/straps.jpg" alt="Image 5" onclick="currentSlide(4)" class="thumbnail">
-    <img src="/images/Brown Tote/tote-sewn.jpg" alt="Image 6" onclick="currentSlide(5)" class="thumbnail">
-    <img src="/images/Brown Tote/brown-tote-final.jpg" alt="Image 7" onclick="currentSlide(6)" class="thumbnail">
-    <img src="/images/Brown Tote/tote-completed-vid-thumbnail.png" alt="Image 8" onclick="currentSlide(7)" class="thumbnail">
-    <img src="/images/Brown Tote/brown-tote-thumbnail.jpg" alt="Image 9" onclick="currentSlide(8)" class="thumbnail">
+    <img src="/images/Brown Tote/straps.jpg" alt="Image 4" onclick="currentSlide(3)" class="thumbnail">
+    <img src="/images/Brown Tote/tote-sewn.jpg" alt="Image 5" onclick="currentSlide(4)" class="thumbnail">
+    <img src="/images/Brown Tote/brown-tote-final.jpg" alt="Image 6" onclick="currentSlide(5)" class="thumbnail">
+    <img src="/images/Brown Tote/brown-tote-thumbnail.jpg" alt="Image 7" onclick="currentSlide(6)" class="thumbnail">
   </div>
 </div>
 

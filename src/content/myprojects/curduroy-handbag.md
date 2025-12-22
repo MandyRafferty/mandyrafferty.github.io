@@ -38,14 +38,6 @@ Here, this projects transforms a shirt into a bag with an adjustable strap!
       <div class="caption">Both sides of bag</div>
     </div>
     <div class="slide">
-    <video controls>
-        <source src="/videos/handbag-video.MOV" type="video/mp4">
-        <source src="/videos/handbag-video.MOV" type="video/webm">
-        Your browser does not support the video tag.
-    </video>
-    <div class="caption">Video showing inside and outside of side pieces</div>
-    </div>
-    <div class="slide">
       <img src="/images/Handbag/handbag-middle.jpg" alt="Image 6">
       <div class="caption">Adding the middle piece that connects the two sides</div>
     </div>
@@ -81,13 +73,12 @@ Here, this projects transforms a shirt into a bag with an adjustable strap!
     <img src="/images/Handbag/handbag-side1.jpg" alt="Thumbnail 3" onclick="currentSlide(2)" class="thumbnail">
     <img src="/images/Handbag/handbag-pockets.jpg" alt="Image 4" onclick="currentSlide(3)" class="thumbnail">
     <img src="/images/Handbag/handbag-sides.jpg" alt="Image 5" onclick="currentSlide(4)" class="thumbnail">
-    <img src="/images/Handbag/handbagvid-thumbnail.png" alt="Video thumbnail" onclick="currentSlide(5)" class="thumbnail">
-    <img src="/images/Handbag/handbag-middle.jpg" alt="Image 6" onclick="currentSlide(6)" class="thumbnail">
-    <img src="/images/Handbag/handbag-connecting.jpg" alt="Image 7" onclick="currentSlide(7)" class="thumbnail">
-    <img src="/images/Handbag/handbag-main.jpg" alt="Image 8" onclick="currentSlide(8)" class="thumbnail">
-    <img src="/images/Handbag/handbag-finalstitch.jpg" alt="Image 9" onclick="currentSlide(9)" class="thumbnail">
-    <img src="/images/Handbag/handbag-thumbnail.jpg" alt="Image 10" onclick="currentSlide(10)" class="thumbnail">
-    <img src="/images/Handbag/handbag-complete.jpg" alt="Image 11" onclick="currentSlide(11)" class="thumbnail">
+    <img src="/images/Handbag/handbag-middle.jpg" alt="Image 6" onclick="currentSlide(5)" class="thumbnail">
+    <img src="/images/Handbag/handbag-connecting.jpg" alt="Image 7" onclick="currentSlide(6)" class="thumbnail">
+    <img src="/images/Handbag/handbag-main.jpg" alt="Image 8" onclick="currentSlide(7)" class="thumbnail">
+    <img src="/images/Handbag/handbag-finalstitch.jpg" alt="Image 9" onclick="currentSlide(8)" class="thumbnail">
+    <img src="/images/Handbag/handbag-thumbnail.jpg" alt="Image 10" onclick="currentSlide(9)" class="thumbnail">
+    <img src="/images/Handbag/handbag-complete.jpg" alt="Image 11" onclick="currentSlide(10)" class="thumbnail">
   </div>
 </div>
 
