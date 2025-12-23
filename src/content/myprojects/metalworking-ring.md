@@ -2,7 +2,7 @@
 title: "Brass Investment Casted Ring"
 date: "2025-12-05"
 featured: false
-project_num: 24
+project_num: 25
 type: "jewelry making"
 description: "Ring made from investment casting and carving."
 excerpt: "Ring made from investment casting and carving."

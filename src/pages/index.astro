@@ -62,7 +62,7 @@ const featuredPosts = allPosts
       </div>
     </section>
 
-    <section class="hero" style={`background-image: url(${office.src});`}>
+    <section class="hero-office" style={`background-image: url(${office.src});`}>
       <div class="hero-overlay"></div>
       <div class="hero-content">
         <p class="hero-subtitle">Bringing ideas to life through <br/>design & engineering.</p>
@@ -399,6 +399,13 @@ const featuredPosts = allPosts
   }
 
   @media (max-width: 768px) {
+    .hero {
+      background-attachment: scroll; /* Remove fixed background attachment for mobile */
+      background-size: contain; /* Ensure background image is scaled properly */
+      background-position: center center; /* Center the background image */
+      padding: calc(var(--grid-unit) * 8) 0; /* Adjust padding on small screens */
+    }
+
     .hero-title {
       font-size: 3rem;
     }
@@ -427,6 +434,25 @@ const featuredPosts = allPosts
 
     .step-number {
       font-size: 2rem;
+    }
+  }
+
+    .hero-office {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  /* Mobile adjustments for the "hero-office" section */
+  @media (max-width: 768px) {
+    .hero-office {
+      background-size: contain; /* Adjust image size for mobile */
+      background-position: center center; /* Center the background */
+      padding: calc(var(--grid-unit) * 6) 0; /* Adjust padding for mobile */
+    }
+
+    .hero-office .hero-content {
+      padding: 0 var(--content-padding); /* Adjust padding for hero content */
     }
   }
 </style>

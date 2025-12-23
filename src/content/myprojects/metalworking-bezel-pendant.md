@@ -1,6 +1,6 @@
 ---
 title: "Bezel Pendant"
-date: "2025-11-11"
+date: "2025-12-04"
 featured: false
 project_num: 23
 type: "jewelry making"
