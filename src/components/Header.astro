@@ -55,9 +55,9 @@ const ewbSlug = ewbProject?.file.split('/').pop()?.replace(/\.(md|mdx)$/, '');
                 <a href={base + "myprojects"} class="nav-link">My Projects</a>
                 <ul class="dropdown-menu">
                     <li><a href={`${base}engineering-projects/`} class="dropdown-link">Engineering Projects</a></li>
-                    <li><a href={`${base}myprojects/${ewbSlug}/`} class="dropdown-link">Engineers Without Borders: Project Kenya</a></li>
                     <li><a href={`${base}DIYdesign/`} class="dropdown-link">DIY Design & Fabrication</a></li>
                     <li><a href={`${base}jewelry-making/`} class="dropdown-link">Jewelry Making</a></li>
+                    <li><a href={`${base}myprojects/${ewbSlug}/`} class="dropdown-link">Engineers Without Borders: Project Kenya</a></li>
                     <li><a href={`${base}personal-projects/`} class="dropdown-link">Personal Projects</a></li>
                 </ul>
             </li>
@@ -621,6 +621,12 @@ const ewbSlug = ewbProject?.file.split('/').pop()?.replace(/\.(md|mdx)$/, '');
     margin: calc(var(--grid-unit) * 1) 0 0 0;
   }
 
+  .dropdown-menu li {
+    margin: 0;
+    padding: 0;
+    list-style: none; /* extra safety */
+  }
+
   .nav-item:hover .dropdown-menu {
     opacity: 1;
     visibility: visible;
@@ -629,7 +635,7 @@ const ewbSlug = ewbProject?.file.split('/').pop()?.replace(/\.(md|mdx)$/, '');
 
   .dropdown-link {
     display: block;
-    padding: calc(var(--grid-unit) * 2) calc(var(--grid-unit) * 3);
+    padding: calc(var(--grid-unit) * 1.2) calc(var(--grid-unit) * 3);
     color: var(--color-text-primary);
     text-decoration: none;
     font-family: var(--font-heading-secondary);
